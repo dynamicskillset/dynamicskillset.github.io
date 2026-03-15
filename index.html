@@ -254,6 +254,7 @@
         flex-shrink: 0;
         border-radius: 8px;
         overflow: hidden;
+        transform: translateZ(0);
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
       }
 
@@ -269,10 +270,11 @@
       @media (max-width: 600px) {
         .card-featured {
           flex-direction: column;
+          align-items: center;
         }
 
-        .card-featured img {
-          width: 120px;
+        .card-featured-cover {
+          width: 140px;
         }
       }
 

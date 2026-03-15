@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport">
+    <title>Dynamic Skillset Ltd | Consultancy from Dr Doug Belshaw</title>
+    <meta name="description" content="Dr Doug Belshaw offers strategy, systems thinking, digital credentials, AI literacies, facilitation, and coaching for mission-driven organisations.">
+    <!-- Theme -->
+    <meta name="theme-color" content="#5e81ac">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://dynamicskillset.com/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dynamicskillset.com/">
+    <meta property="og:title" content="Dynamic Skillset Ltd">
+    <meta property="og:description" content="Strategy, systems thinking, digital credentials, AI literacies, facilitation, and coaching from Dr Doug Belshaw.">
+    <meta property="og:image" content="https://dynamicskillset.com/og-image.png">
+    <meta property="og:locale" content="en_GB">
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dynamic Skillset Ltd">
+    <meta name="twitter:description" content="Strategy, systems thinking, digital credentials, AI literacies, facilitation, and coaching from Dr Doug Belshaw.">
+    <meta name="twitter:image" content="https://dynamicskillset.com/og-image.png">
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Dynamic Skillset Ltd",
+        "description": "Consultancy from Dr Doug Belshaw. Helping mission-driven organisations navigate complexity through strategy, systems thinking, digital credentials, AI literacies, and facilitation.",
+        "url": "https://dynamicskillset.com",
+        "founder": {
+          "@type": "Person",
+          "name": "Dr Doug Belshaw",
+          "jobTitle": "Consultant",
+          "url": "https://dougbelshaw.com"
+        },
+        "areaServed": "Worldwide",
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Consultancy Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Strategy & Systems Thinking"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital Credentials"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital & AI Literacies"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Facilitation & Coaching"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Speaking & Writing"}}
+          ]
+        }
+      }
+    </script>
+    <style>
+      /* ── Nord palette ── */
+      :root {
+        --nord0: #2e3440;
+        --nord1: #3b4252;
+        --nord3: #4c566a;
+        --nord4: #d8dee9;
+        --nord5: #e5e9f0;
+        --nord6: #eceff4;
+        --nord7: #8fbcbb;
+        --nord8: #88c0d0;
+        --nord9: #81a1c1;
+        --nord10: #5e81ac;
+        --nord11: #bf616a;
+        --nord13: #ebcb8b;
+        --nord14: #a3be8c;
+        --nord15: #b48ead;
+      }
+
+      /* ── Semantic variables ── */
+      :root {
+        --bg: var(--nord10);
+        --text: var(--nord6);
+        --text-secondary: var(--nord5);
+        --card-bg: rgba(236, 239, 244, 0.08);
+        --card-border: rgba(236, 239, 244, 0.15);
+        --card-hover-bg: rgba(236, 239, 244, 0.14);
+        --link-bg: var(--nord5);
+        --link-color: var(--nord10);
+        --link-hover-bg: var(--nord13);
+        --link-hover-color: var(--nord0);
+        --cta-bg: var(--nord13);
+        --cta-color: var(--nord0);
+        --focus-ring: var(--nord6);
+        --accent-purple: var(--nord15);
+      }
+
+      /* ── Box-sizing reset ── */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+
+      /* ── Base ── */
+      html {
+        font: 1.25em/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-kerning: normal;
+        padding: 5% max(5%, env(safe-area-inset-right)) 2% max(5%, env(safe-area-inset-left));
+        background: var(--bg);
+        color: var(--text);
+        scroll-behavior: smooth;
+      }
+
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+        isolation: isolate;
+      }
+
+      /* ── Network SVG background ── */
+      .network-svg {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      /* SMIL handles animation; no CSS keyframes needed */
+
+      /* ── Section h2 accent colour ── */
+      section h2 { border-bottom-color: #ebcb8b; }
+
+      /* ── Typography hierarchy ── */
+      h1 {
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        margin-bottom: 0.3em;
+      }
+
+      h2 {
+        font-size: 1.6em;
+        font-weight: 300;
+        letter-spacing: 0.02em;
+        border-bottom: 1px solid var(--card-border);
+        padding-bottom: 0.3em;
+        margin-bottom: 1em;
+      }
+
+      h3 {
+        font-size: 1.15em;
+        font-weight: 600;
+        margin: 0 0 0.5em;
+      }
+
+      p {
+        margin: 0 0 1em;
+      }
+
+      /* ── Pill links ── */
+      a {
+        color: var(--link-color);
+        background: var(--link-bg);
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 0.15em 0.3em;
+        transition: background 0.2s cubic-bezier(0.25, 1, 0.5, 1), color 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+
+      a:hover {
+        background: var(--link-hover-bg);
+        color: var(--link-hover-color);
+      }
+
+      a:focus {
+        outline: 2px solid var(--focus-ring);
+        outline-offset: 2px;
+      }
+
+      a:focus:not(:focus-visible) {
+        outline: none;
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--focus-ring);
+        outline-offset: 2px;
+      }
+
+      /* ── Nav links ── */
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2rem;
+      }
+
+      .nav-links a {
+        background: none;
+        color: var(--text-secondary);
+        font-weight: 400;
+        font-size: 0.9em;
+        padding: 0.4em 0.2em;
+        border-bottom: 1px solid transparent;
+      }
+
+      .nav-links a:hover {
+        color: var(--text);
+        background: none;
+        border-bottom-color: var(--text);
+      }
+
+      /* ── Card grid ── */
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+      }
+
+      /* ── Cards ── */
+      .card {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 12px;
+        padding: 1.5em;
+        transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        background: var(--card-hover-bg);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .card p {
+        font-size: 0.9em;
+        color: var(--text-secondary);
+        margin: 0;
+      }
+
+      .card .example {
+        font-size: 0.85em;
+        margin-top: 0.8em;
+        padding-top: 0.8em;
+        border-top: 1px solid var(--card-border);
+      }
+
+      /* ── Post links ── */
+      .post-list {
+        list-style: disc;
+        padding: 0 0 0 1.2em;
+        color: var(--text-secondary);
+        margin: 1em 0;
+      }
+
+      .post-list li {
+        border-bottom: 1px solid var(--card-border);
+      }
+
+      .post-list li:first-child {
+        border-top: 1px solid var(--card-border);
+      }
+
+      .post-list a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1em;
+        background: none;
+        border-radius: 0;
+        padding: 0.7em 0.3em;
+        color: var(--text);
+        font-weight: 400;
+        font-size: 0.95em;
+        line-height: 1.4;
+        transition: padding-left 0.2s cubic-bezier(0.25, 1, 0.5, 1), color 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+
+      .post-list a::after {
+        content: "\2192";
+        color: var(--text-secondary);
+        opacity: 0;
+        transition: opacity 0.2s cubic-bezier(0.25, 1, 0.5, 1), transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+        transform: translateX(-0.3em);
+        flex-shrink: 0;
+      }
+
+      .post-list a:hover {
+        background: none;
+        color: var(--nord13);
+        padding-left: 0.6em;
+      }
+
+      .post-list a:hover::after {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      /* ── CTA button ── */
+      .cta {
+        display: inline-block;
+        background: var(--cta-bg);
+        color: var(--cta-color);
+        font-weight: 700;
+        padding: 0.5em 1.2em;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+
+      .cta:hover {
+        background: var(--cta-bg);
+        color: var(--cta-color);
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+
+      /* ── Tagline ── */
+      .tagline {
+        color: var(--text);
+        font-size: 1.1em;
+        margin-top: -0.3em;
+        font-weight: 300;
+      }
+
+      /* ── Hero intro ── */
+      .hero-intro {
+        font-size: 1.1em;
+        max-width: 720px;
+      }
+
+      /* ── Logo ── */
+      .logo {
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: -0.15em;
+        margin-right: 0.2em;
+      }
+
+      /* ── Testimonial card ── */
+      .testimonial-card {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-left: 3px solid var(--nord13);
+        border-radius: 0 12px 12px 0;
+        padding: 1.5em;
+        margin-bottom: 1.5em;
+      }
+
+      .testimonial-card p {
+        font-size: 0.95em;
+        line-height: 1.6;
+      }
+
+      .testimonial-card cite {
+        display: block;
+        font-style: italic;
+        font-size: 0.9em;
+        color: var(--text-secondary);
+        margin-top: 1em;
+      }
+
+      /* ── Details/summary ── */
+      summary {
+        cursor: pointer;
+        color: var(--text-secondary);
+        margin: 1.5em 0;
+        font-size: 0.95em;
+      }
+
+      summary:hover {
+        color: var(--text);
+      }
+
+      details[open] summary {
+        margin-bottom: 1em;
+      }
+
+      /* ── Contact list ── */
+      .contact-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+
+      /* ── Footer ── */
+      footer {
+        padding: 2rem 0;
+        text-align: center;
+        font-size: 0.85em;
+        color: var(--text-secondary);
+        border-top: 1px solid var(--card-border);
+      }
+
+      /* ── Sections ── */
+      section {
+        padding: 1rem 0;
+      }
+
+      /* ── Skip link ── */
+      .skip-link {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        padding: 0.5em 1em;
+        z-index: 100;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 600px) {
+        html {
+          font-size: 1.1em;
+        }
+
+        .card-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-list {
+          flex-direction: column;
+        }
+
+        h1 {
+          font-size: 1.6em;
+        }
+
+        h2 {
+          font-size: 1.3em;
+        }
+      }
+
+      /* ── Reduced motion ── */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        .network-svg {
+          display: none;
+        }
+
+        .card,
+        .cta,
+        a,
+        .nav-links a,
+        .post-list a {
+          transition: none;
+        }
+
+        .card:hover,
+        .cta:hover {
+          transform: none;
+        }
+
+        .post-list a:hover {
+          padding-left: 0.3em;
+        }
+
+        .post-list a::after,
+        .post-list a:hover::after {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      SMIL network: each <line> animates its own x1/y1 and x2/y2 independently,
+      so every endpoint tracks its node's path. Lines stay connected while nodes
+      drift freely at different speeds and phases.
+
+      Node paths (dur / begin offset):
+        N1  180,130  20s  0s      N2  480,90   24s -8s
+        N3  780,140  18s -5s      N4 1120,80   22s -14s
+        N5 1360,220  26s -6s      N6  200,460  19s -11s
+        N7  550,400  23s -3s      N8  900,430  21s -16s
+        N9 1180,500  17s -9s      N10 400,700  25s -13s
+        N11 730,680  20s -7s      N12 1050,720 22s -4s
+        N13 1310,700 24s -10s
+    -->
+    <svg class="network-svg" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <g stroke="#d8dee9" stroke-width="1" opacity="0.25" fill="none">
+
+        <line x1="180" y1="130" x2="480" y2="90">
+          <animate attributeName="x1" values="180;222;158;198;180" dur="20s" repeatCount="indefinite" begin="0s"></animate>
+          <animate attributeName="y1" values="130;108;148;118;130" dur="20s" repeatCount="indefinite" begin="0s"></animate>
+          <animate attributeName="x2" values="480;514;454;492;480" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
+          <animate attributeName="y2" values="90;116;72;102;90" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
+        </line>
+
+        <line x1="480" y1="90" x2="780" y2="140">
+          <animate attributeName="x1" values="480;514;454;492;480" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
+          <animate attributeName="y1" values="90;116;72;102;90" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
+          <animate attributeName="x2" values="780;818;752;792;780" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
+          <animate attributeName="y2" values="140;118;162;132;140" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
+        </line>
+
+        <line x1="780" y1="140" x2="1120" y2="80">
+          <animate attributeName="x1" values="780;818;752;792;780" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
+          <animate attributeName="y1" values="140;118;162;132;140" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
+          <animate attributeName="x2" values="1120;1152;1094;1132;1120" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
+          <animate attributeName="y2" values="80;106;62;92;80" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
+        </line>
+
+        <line x1="1120" y1="80" x2="1360" y2="220">
+          <animate attributeName="x1" values="1120;1152;1094;1132;1120" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
+          <animate attributeName="y1" values="80;106;62;92;80" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
+          <animate attributeName="x2" values="1360;1388;1338;1372;1360" dur="26s" repeatCount="indefinite" begin="-6s"></animate>
+          <animate attributeName="y2" values="220;194;244;208;220" dur="26s" repeatCount="indefinite" begin="-6s"></animate>
+        </line>
+
+        <line x1="180" y1="130" x2="200" y2="460">
+          <animate attributeName="x1" values="180;222;158;198;180" dur="20s" repeatCount="indefinite" begin="0s"></animate>
+          <animate attributeName="y1" values="130;108;148;118;130" dur="20s" repeatCount="indefinite" begin="0s"></animate>
+          <animate attributeName="x2" values="200;238;172;214;200" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
+          <animate attributeName="y2" values="460;432;482;448;460" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
+        </line>
+
+        <line x1="480" y1="90" x2="550" y2="400">
+          <animate attributeName="x1" values="480;514;454;492;480" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
+          <animate attributeName="y1" values="90;116;72;102;90" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
+          <animate attributeName="x2" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+          <animate attributeName="y2" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+        </line>
+
+        <line x1="780" y1="140" x2="900" y2="430">
+          <animate attributeName="x1" values="780;818;752;792;780" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
+          <animate attributeName="y1" values="140;118;162;132;140" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
+          <animate attributeName="x2" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+          <animate attributeName="y2" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+        </line>
+
+        <line x1="1120" y1="80" x2="1180" y2="500">
+          <animate attributeName="x1" values="1120;1152;1094;1132;1120" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
+          <animate attributeName="y1" values="80;106;62;92;80" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
+          <animate attributeName="x2" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+          <animate attributeName="y2" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+        </line>
+
+        <line x1="1360" y1="220" x2="1180" y2="500">
+          <animate attributeName="x1" values="1360;1388;1338;1372;1360" dur="26s" repeatCount="indefinite" begin="-6s"></animate>
+          <animate attributeName="y1" values="220;194;244;208;220" dur="26s" repeatCount="indefinite" begin="-6s"></animate>
+          <animate attributeName="x2" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+          <animate attributeName="y2" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+        </line>
+
+        <line x1="200" y1="460" x2="550" y2="400">
+          <animate attributeName="x1" values="200;238;172;214;200" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
+          <animate attributeName="y1" values="460;432;482;448;460" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
+          <animate attributeName="x2" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+          <animate attributeName="y2" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+        </line>
+
+        <line x1="550" y1="400" x2="900" y2="430">
+          <animate attributeName="x1" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+          <animate attributeName="y1" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+          <animate attributeName="x2" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+          <animate attributeName="y2" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+        </line>
+
+        <line x1="900" y1="430" x2="1180" y2="500">
+          <animate attributeName="x1" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+          <animate attributeName="y1" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+          <animate attributeName="x2" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+          <animate attributeName="y2" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+        </line>
+
+        <line x1="200" y1="460" x2="400" y2="700">
+          <animate attributeName="x1" values="200;238;172;214;200" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
+          <animate attributeName="y1" values="460;432;482;448;460" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
+          <animate attributeName="x2" values="400;434;372;412;400" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
+          <animate attributeName="y2" values="700;672;724;688;700" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
+        </line>
+
+        <line x1="550" y1="400" x2="400" y2="700">
+          <animate attributeName="x1" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+          <animate attributeName="y1" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+          <animate attributeName="x2" values="400;434;372;412;400" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
+          <animate attributeName="y2" values="700;672;724;688;700" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
+        </line>
+
+        <line x1="550" y1="400" x2="730" y2="680">
+          <animate attributeName="x1" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+          <animate attributeName="y1" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
+          <animate attributeName="x2" values="730;762;702;742;730" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
+          <animate attributeName="y2" values="680;652;704;668;680" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
+        </line>
+
+        <line x1="900" y1="430" x2="730" y2="680">
+          <animate attributeName="x1" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+          <animate attributeName="y1" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+          <animate attributeName="x2" values="730;762;702;742;730" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
+          <animate attributeName="y2" values="680;652;704;668;680" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
+        </line>
+
+        <line x1="900" y1="430" x2="1050" y2="720">
+          <animate attributeName="x1" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+          <animate attributeName="y1" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
+          <animate attributeName="x2" values="1050;1082;1022;1062;1050" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
+          <animate attributeName="y2" values="720;692;744;708;720" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
+        </line>
+
+        <line x1="1180" y1="500" x2="1050" y2="720">
+          <animate attributeName="x1" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+          <animate attributeName="y1" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+          <animate attributeName="x2" values="1050;1082;1022;1062;1050" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
+          <animate attributeName="y2" values="720;692;744;708;720" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
+        </line>
+
+        <line x1="400" y1="700" x2="730" y2="680">
+          <animate attributeName="x1" values="400;434;372;412;400" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
+          <animate attributeName="y1" values="700;672;724;688;700" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
+          <animate attributeName="x2" values="730;762;702;742;730" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
+          <animate attributeName="y2" values="680;652;704;668;680" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
+        </line>
+
+        <line x1="730" y1="680" x2="1050" y2="720">
+          <animate attributeName="x1" values="730;762;702;742;730" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
+          <animate attributeName="y1" values="680;652;704;668;680" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
+          <animate attributeName="x2" values="1050;1082;1022;1062;1050" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
+          <animate attributeName="y2" values="720;692;744;708;720" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
+        </line>
+
+        <line x1="1180" y1="500" x2="1310" y2="700">
+          <animate attributeName="x1" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+          <animate attributeName="y1" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
+          <animate attributeName="x2" values="1310;1344;1282;1322;1310" dur="24s" repeatCount="indefinite" begin="-10s"></animate>
+          <animate attributeName="y2" values="700;674;724;690;700" dur="24s" repeatCount="indefinite" begin="-10s"></animate>
+        </line>
+
+        <line x1="1050" y1="720" x2="1310" y2="700">
+          <animate attributeName="x1" values="1050;1082;1022;1062;1050" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
+          <animate attributeName="y1" values="720;692;744;708;720" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
+          <animate attributeName="x2" values="1310;1344;1282;1322;1310" dur="24s" repeatCount="indefinite" begin="-10s"></animate>
+          <animate attributeName="y2" values="700;674;724;690;700" dur="24s" repeatCount="indefinite" begin="-10s"></animate>
+        </line>
+
+      </g>
+    </svg>
+    <a href="#services" class="skip-link">Skip to content</a>
+
+    <header>
+      <h1>
+        <svg class="logo" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="#eceff4"></circle>
+          <path d="M22 8L12 22h7l-3 10 12-14h-8z" fill="#5e81ac"></path>
+        </svg> Dynamic Skillset Ltd
+      </h1>
+      <p class="tagline">Consultancy from <a href="https://dougbelshaw.com">Dr Doug Belshaw</a></p>
+      <p class="hero-intro">Helping mission-driven organisations navigate complexity and work more openly. I'm a consultant, facilitator, and critical friend.</p>
+      <p><strong>Stuck?</strong> The chances are I can point you in the right direction.</p>
+      <p><a class="cta" href="#contact">Let's talk</a></p>
+    </header>
+
+    <main>
+      <section id="services">
+        <h2>What I do</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Strategy &amp; Systems Thinking</h3>
+            <p>Helping organisations see the bigger picture through theory of change work, identifying leverage points, and navigating boundaries between systems.</p>
+            <p class="example"><b>Example:</b> Guiding the Gates Foundation-funded SEBI-L team through a Theory of Change as part of their 10-year strategy</p>
+          </div>
+          <div class="card">
+            <h3>Digital Credentials</h3>
+            <p>Guiding the design and adoption of verifiable credentials, digital badges, and micro-credentials — from policy through to implementation.</p>
+            <p class="example"><b>Example:</b> Supporting Skills Development Scotland and the Awards Network towards a national system of Verifiable Credentials</p>
+          </div>
+          <div class="card">
+            <h3>Digital &amp; AI Literacies</h3>
+            <p>Creating frameworks and guidance for responsible AI adoption and digital literacy across organisations and sectors.</p>
+            <p class="example"><b>Example:</b> Developing an AI Literacies framework for the Responsible Innovation Centre for Public Media Futures based at the BBC</p>
+          </div>
+          <div class="card">
+            <h3>Facilitation &amp; Coaching</h3>
+            <p>Running away days, aligning stakeholders, mentoring individuals, and facilitating group decision-making using sociocratic processes.</p>
+            <p class="example"><b>Example:</b> Facilitating a multi-stakeholder away day for LocalGov Drupal to establish consent on future collaboration</p>
+          </div>
+          <div class="card">
+            <h3>Speaking &amp; Writing</h3>
+            <p>Conference keynotes, podcast appearances, and authored reports. Regular contributor to conversations about education, technology, and open practices.</p>
+            <p class="example"><b>Example:</b> See my <a href="https://dougbelshaw.com/speaking">Speaking</a> page for recordings. For example my appearance on Helen Beetham's <a href="https://helenbeetham.substack.com/p/doug-belshaw-on-digital-and-ai-literacies">imperfect offerings</a> podcast</p>
+          </div>
+          <div class="card">
+            <h3>Critical Friend</h3>
+            <p>An honest, constructive sounding board for leaders and organisations. I ask the questions others won't, challenge assumptions, and help you see blind spots — while remaining firmly on your side.</p>
+            <p class="example"><b>Example:</b> Serving as critical friend to the Director of London CLC, providing independent perspective on strategy and programmes</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources">
+        <h2>Resources</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>AI Literacies</h3>
+            <p>A framework for understanding and developing AI literacy, building on the Essential Elements of Digital Literacies.</p>
+            <p class="example"><a href="https://archive.reclaim.tv/videos/watch/1b218e0e-d9e8-42f9-b8ab-302e85ecb19b">Watch the video</a></p>
+          </div>
+          <div class="card">
+            <h3>Digital Credentials</h3>
+            <p>Report for the Irish Technological University sector on the future of digital and micro credentials.</p>
+            <p class="example"><a href="https://www.ndln.ie/new-learning-and-teaching-models">Read the report</a></p>
+          </div>
+          <div class="card">
+            <h3>Harnessing AI for Environmental Justice</h3>
+            <p>Co-authored report for Friends of the Earth on principles for AI sustainability and environmental justice.</p>
+            <p class="example"><a href="https://policy.friendsoftheearth.uk/reports/harnessing-ai-environmental-justice">Read the report</a></p>
+          </div>
+          <div class="card">
+            <h3>Complexity &amp; Mental Models</h3>
+            <p>Ebook on how to be less wrong in times of polycrisis. Helps leaders with mental models for decision-making.</p>
+            <p class="example"><a href="https://dajbelshaw.gumroad.com/l/polycrisis?layout=profile">Read the ebook</a></p>
+          </div>
+        </div>
+        <h3 style="margin-top: 2.5em;">Recent writing</h3>
+        <p>Selected posts from <a href="https://blog.dougbelshaw.com">my blog</a></p>
+        <ul class="post-list">
+          <li><a href="https://blog.dougbelshaw.com/polycrisis-ebook/">New ebook: How to Be Less Wrong in a Polycrisis</a></li>
+          <li><a href="https://blog.dougbelshaw.com/unemployable/">Why your organisation needs someone "unemployable"</a></li>
+          <li><a href="https://blog.dougbelshaw.com/why-your-worst-decision-probably-came-from-your-best-analysis/">Why your worst decision probably came from your best analysis</a></li>
+          <li><a href="https://blog.dougbelshaw.com/getting-off-us-tech/">The uncomfortable truth about getting people off US tech</a></li>
+          <li><a href="https://blog.dougbelshaw.com/outdated-mental-models/">Your mental models are out of date</a></li>
+        </ul>
+        <p style="font-size:0.9em; color: var(--text-secondary);">All blog content is released under CC0 (public domain) unless otherwise specified.</p>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-card">
+          <p>Doug and I go way back to the early days of Open Badges. His 15+ years in this space means he brings not just expertise, but institutional memory and perspective that's invaluable as the digital credentials field evolves.</p>
+          <p>I appreciate that Doug operates at multiple levels simultaneously. He understands technology deeply, and he's equally comfortable navigating community dynamics and organizational change. Whether he's presenting, writing reports on micro-credentials, or facilitating strategic planning sessions, he stays grounded in human-centered approaches and open practices.</p>
+          <p>Doug combines deep technical knowledge, facilitation skills, community-building expertise, and collaborative instinct. I'm grateful for everything he's contributed to the DCC and to digital credentials more broadly.</p>
+          <cite>— Kerri Lemoie, PhD (Director, Digital Credentials Consortium)</cite>
+        </div>
+        <details>
+          <summary>More testimonials</summary>
+          <div class="testimonial-card">
+            <p>I've had the pleasure of working with Doug Belshaw across several badging workshops as part of the N-TUTORR programme. Doug brings exceptional clarity of thought, deep expertise in digital literacies, and a collaborative spirit that elevates every session he's part of. He's equally at ease shaping big-picture strategy as he is engaging participants in practical, hands-on learning. Any team would benefit from Doug's insight, integrity, and sheer commitment to meaningful professional development.</p>
+            <cite>— Ken McCarthy (Head of Centre for Academic Practice at South East Technological University)</cite>
+          </div>
+          <div class="testimonial-card">
+            <p>I had the pleasure of working with Doug on an away day bringing together multiple stakeholders with potentially different interests with a view to establishing consent on how to work together in the future. His work on pre-planning was timely and efficient, yet effective. I know from past experience that the day itself could have been a huge challenge but went really smoothly, mostly down to the sociocratic processes put in place by Doug and his colleague Aaron. This is testament to the energy, enthusiasm and preparation that went into it.</p>
+            <cite>— Nathan Brown (Director at Co-op Culture)</cite>
+          </div>
+          <div class="testimonial-card">
+            <p>Always really switched on. A sane voice around all things educational technology and standards and much more — always look forward to working in Doug related space.</p>
+            <cite>— Joe Wilson (Quality Assurance Specialist TQER)</cite>
+          </div>
+          <div class="testimonial-card">
+            <p>I took some mentoring sessions with Doug. I wasn't expecting much because I thought I knew my service pretty well. I was wrong, Doug unearthed a lot for me to think about. I'll be back for more.</p>
+            <cite>— Mark Conroy (Drupal consultant)</cite>
+          </div>
+        </details>
+      </section>
+
+      <section id="contact">
+        <h2>Get in touch</h2>
+        <p>Every situation is slightly different, so let's start with a 30-minute (free) chat. I'm based in the UK and usually work remotely, but can travel nationally and internationally. Engagements range from single sessions to ongoing partnerships.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:%68ell%6F%40dy%6Ea%6D%69cskillset%2Ec%6F%6D">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/dajbelshaw">LinkedIn</a></li>
+          <li><a href="https://signal.me/#eu/irSoRXEn7M4IsmSksKJ4y4uiG-Sw8k3ywM3qSggm9IAWf162_cdCwbc0IDNKai_C">Signal</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Dynamic Skillset Ltd · 20 Wenlock Road, London, England, N1 7GU</p>
+      <p>Company number: 09365574 · VAT number: 230070858</p>
+    </footer>
+
+</body></html>

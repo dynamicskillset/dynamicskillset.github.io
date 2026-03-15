@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80">
+	<!-- Logo circle with inverse colors -->
+	<circle cx="40" cy="40" r="35" fill="#2d5a8c"/>
+	<path d="M44 18L28 42h14l-5 20 20-22h-14z" fill="#ffffff"/>
+
+	<!-- Text -->
+	<text x="90" y="55" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="40" font-weight="700" fill="#2d5a8c">Dynamic Skillset Ltd.</text>
+</svg>

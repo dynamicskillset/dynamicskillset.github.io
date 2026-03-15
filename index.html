@@ -215,6 +215,35 @@
         gap: 1.5em;
       }
 
+      /* ── Featured ebook card ── */
+      .card-featured {
+        grid-column: 1 / -1;
+        display: flex;
+        gap: 1.8em;
+        align-items: flex-start;
+      }
+
+      .card-featured img {
+        width: 150px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .card-featured h3 {
+        margin-top: 0;
+      }
+
+      @media (max-width: 600px) {
+        .card-featured {
+          flex-direction: column;
+        }
+
+        .card-featured img {
+          width: 120px;
+        }
+      }
+
       /* ── Cards ── */
       .card {
         background: var(--card-bg);
@@ -696,6 +725,14 @@
       <section id="resources">
         <h2>Resources</h2>
         <div class="card-grid">
+          <div class="card card-featured">
+            <img src="https://blog.dougbelshaw.com/content/images/size/w1000/2026/02/cover-page.png" alt="How to Be Less Wrong in a Polycrisis — ebook cover" width="150">
+            <div>
+              <h3>New ebook: How to Be Less Wrong in a Polycrisis</h3>
+              <p>A practical guide to decision-making in uncertain times. Drawing on systems thinking and mental models, it helps leaders and organisations avoid common thinking traps — and make better calls when the stakes are high.</p>
+              <p class="example"><a href="https://blog.dougbelshaw.com/polycrisis-ebook/">Read the announcement</a> · <a href="https://dajbelshaw.gumroad.com/l/polycrisis?layout=profile">Get the ebook</a></p>
+            </div>
+          </div>
           <div class="card">
             <h3>AI Literacies</h3>
             <p>A framework for understanding and developing AI literacy, building on the Essential Elements of Digital Literacies.</p>
@@ -711,19 +748,14 @@
             <p>Co-authored report for Friends of the Earth on principles for AI sustainability and environmental justice.</p>
             <p class="example"><a href="https://policy.friendsoftheearth.uk/reports/harnessing-ai-environmental-justice">Read the report</a></p>
           </div>
-          <div class="card">
-            <h3>Complexity &amp; Mental Models</h3>
-            <p>Ebook on how to be less wrong in times of polycrisis. Helps leaders with mental models for decision-making.</p>
-            <p class="example"><a href="https://dajbelshaw.gumroad.com/l/polycrisis?layout=profile">Read the ebook</a></p>
-          </div>
         </div>
         <h3 style="margin-top: 2.5em;">Recent writing</h3>
         <p>Selected posts from <a href="https://blog.dougbelshaw.com">my blog</a></p>
         <ul class="post-list">
-          <li><a href="https://blog.dougbelshaw.com/polycrisis-ebook/">New ebook: How to Be Less Wrong in a Polycrisis</a></li>
-          <li><a href="https://blog.dougbelshaw.com/unemployable/">Why your organisation needs someone "unemployable"</a></li>
-          <li><a href="https://blog.dougbelshaw.com/why-your-worst-decision-probably-came-from-your-best-analysis/">Why your worst decision probably came from your best analysis</a></li>
-          <li><a href="https://blog.dougbelshaw.com/getting-off-us-tech/">The uncomfortable truth about getting people off US tech</a></li>
+          <li><a href="https://blog.dougbelshaw.com/polygonal-badges/">Badges that change shape to show skills development</a></li>
+          <li><a href="https://blog.dougbelshaw.com/ai-legibility-significance/">When AI remembers everything and organisations forget how to choose</a></li>
+          <li><a href="https://blog.dougbelshaw.com/techfreedom-launch/">TechFreedom and the risks hiding in your tech stack</a></li>
+          <li><a href="https://blog.dougbelshaw.com/google-to-proton/">How and why I've migrated from Google to Proton</a></li>
           <li><a href="https://blog.dougbelshaw.com/outdated-mental-models/">Your mental models are out of date</a></li>
         </ul>
         <p style="font-size:0.9em; color: var(--text-secondary);">All blog content is released under CC0 (public domain) unless otherwise specified.</p>

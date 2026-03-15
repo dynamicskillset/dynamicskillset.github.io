@@ -249,11 +249,17 @@
         align-items: flex-start;
       }
 
-      .card-featured img {
+      .card-featured-cover {
         width: 150px;
         flex-shrink: 0;
         border-radius: 8px;
+        overflow: hidden;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .card-featured-cover img {
+        display: block;
+        width: 100%;
       }
 
       .card-featured h3 {
@@ -753,7 +759,9 @@
         <h2>Resources</h2>
         <div class="card-grid">
           <div class="card card-featured">
-            <img src="https://blog.dougbelshaw.com/content/images/size/w1000/2026/02/cover-page.png" alt="How to Be Less Wrong in a Polycrisis — ebook cover" width="150">
+            <div class="card-featured-cover">
+              <img src="https://blog.dougbelshaw.com/content/images/size/w1000/2026/02/cover-page.png" alt="How to Be Less Wrong in a Polycrisis — ebook cover">
+            </div>
             <div>
               <h3>New ebook: How to Be Less Wrong in a Polycrisis</h3>
               <p>A practical guide to decision-making in uncertain times. Drawing on systems thinking and mental models, it helps leaders and organisations avoid common thinking traps — and make better calls when the stakes are high.</p>

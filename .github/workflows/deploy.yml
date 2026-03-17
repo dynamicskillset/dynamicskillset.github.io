@@ -37,5 +37,6 @@ jobs:
             --exclude='node_modules' \
             --exclude='*.backup.*' \
             --exclude='New website' \
+            --exclude='sightlines' \
             -e "ssh -i ~/.ssh/deploy_key" \
             ./ "$VPS_USER@$VPS_HOST:$DEPLOY_PATH/"

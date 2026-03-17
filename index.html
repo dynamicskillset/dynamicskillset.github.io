@@ -254,13 +254,14 @@
         flex-shrink: 0;
         border-radius: 8px;
         overflow: hidden;
-        transform: translateZ(0);
+        clip-path: inset(0 round 8px);
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
       }
 
       .card-featured-cover img {
         display: block;
         width: 100%;
+        border-radius: 8px;
       }
 
       .card-featured h3 {
@@ -771,22 +772,22 @@
             </div>
           </div>
           <div class="card">
-            <h3>AI Literacies</h3>
+            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="2" width="10" height="14" rx="1" fill="none" stroke="#ebcb8b" stroke-width="1.5"/><line x1="6" y1="6" x2="10" y2="6" stroke="#ebcb8b" stroke-width="1.2" stroke-linecap="round"/><line x1="6" y1="9" x2="10" y2="9" stroke="#ebcb8b" stroke-width="1.2" stroke-linecap="round"/><line x1="6" y1="12" x2="8" y2="12" stroke="#ebcb8b" stroke-width="1.2" stroke-linecap="round"/><path d="M10 2 L13 5 L13 16 L10 16" fill="none" stroke="#ebcb8b" stroke-width="1.2" stroke-linejoin="round" opacity="0.6"/></svg>AI Literacies</h3>
             <p>A framework for understanding and developing AI literacy, building on the Essential Elements of Digital Literacies.</p>
             <p class="example"><a href="https://archive.reclaim.tv/videos/watch/1b218e0e-d9e8-42f9-b8ab-302e85ecb19b">Watch the video</a></p>
           </div>
           <div class="card">
-            <h3>Digital Credentials</h3>
+            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="7.5" r="4.5" fill="none" stroke="#ebcb8b" stroke-width="1.5"/><path d="M7 11.5 L5.5 18 L10 15.5 L14.5 18 L13 11.5" fill="none" stroke="#ebcb8b" stroke-width="1.5" stroke-linejoin="round"/></svg>Digital Credentials</h3>
             <p>Report for the Irish Technological University sector on the future of digital and micro credentials.</p>
             <p class="example"><a href="https://www.ndln.ie/new-learning-and-teaching-models">Read the report</a></p>
           </div>
           <div class="card">
-            <h3>Harnessing AI for Environmental Justice</h3>
+            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4 17 C4 8 13 3 17 3 C17 10 11 17 4 17Z" fill="none" stroke="#ebcb8b" stroke-width="1.5" stroke-linejoin="round"/><line x1="4" y1="17" x2="11.5" y2="9" stroke="#ebcb8b" stroke-width="1.2" stroke-linecap="round"/></svg>Harnessing AI for Environmental Justice</h3>
             <p>Co-authored report for Friends of the Earth examining how AI can be used to advance environmental goals — and the risks it poses. Sets out principles for responsible AI adoption in civil society organisations, with a focus on energy use, data governance, and community impact.</p>
             <p class="example"><a href="https://policy.friendsoftheearth.uk/reports/harnessing-ai-environmental-justice">Read the report</a></p>
           </div>
           <div class="card">
-            <h3>Recent writing</h3>
+            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 2.5 L17.5 6.5 L7 17 L3 17 L3 13 Z" fill="none" stroke="#ebcb8b" stroke-width="1.5" stroke-linejoin="round"/><line x1="11" y1="5" x2="15" y2="9" stroke="#ebcb8b" stroke-width="1.2"/></svg>Recent writing</h3>
             <ul class="post-list">
               <li><a href="https://blog.dougbelshaw.com/polygonal-badges/">Badges that change shape to show skills development</a></li>
               <li><a href="https://blog.dougbelshaw.com/ai-legibility-significance/">When AI remembers everything and organisations forget how to choose</a></li>
@@ -801,6 +802,29 @@
         <h2>Tools</h2>
         <p>I've built these tools to improve my own practice as a freelance consultant. They're all open source, so you're welcome to use them too.</p>
         <div class="card-grid card-grid-3">
+          <div class="card" style="grid-column: 1 / -1; display: flex; gap: 1.8em; align-items: center;">
+            <div class="tool-logo" style="width: 72px; height: 72px; flex-shrink: 0; margin-bottom: 0;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
+                <!-- Eye -->
+                <path d="M5 30 C13 19, 25 19, 28 30 C25 41, 13 41, 5 30Z" fill="none" stroke="#D8DEE9" stroke-width="2.5"/>
+                <circle cx="17" cy="30" r="7" fill="#3B4252" stroke="#5E81AC" stroke-width="2"/>
+                <circle cx="17" cy="30" r="2.5" fill="#D8DEE9"/>
+                <!-- Three sightlines -->
+                <line x1="28" y1="30" x2="91" y2="11" stroke="#A3BE8C" stroke-width="3" stroke-linecap="round"/>
+                <line x1="28" y1="30" x2="95" y2="30" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
+                <line x1="28" y1="30" x2="91" y2="49" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
+                <!-- End dots -->
+                <circle cx="91" cy="11" r="3.5" fill="#A3BE8C"/>
+                <circle cx="95" cy="30" r="3.5" fill="#88C0D0"/>
+                <circle cx="91" cy="49" r="3.5" fill="#EBCB8B"/>
+              </svg>
+            </div>
+            <div>
+              <h3 style="margin-top: 0;">Sightlines</h3>
+              <p>A suite of three tools for thinking more clearly about your organisation's technology: what you have, what it costs, and what it means for your independence.</p>
+              <p class="example"><a href="https://dynamicskillset.com/sightlines">Open Sightlines</a></p>
+            </div>
+          </div>
           <div class="card">
             <div class="tool-logo">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">

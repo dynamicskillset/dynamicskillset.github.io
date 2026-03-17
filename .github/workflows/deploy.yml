@@ -38,5 +38,6 @@ jobs:
             --exclude='*.backup.*' \
             --exclude='New website' \
             --exclude='sightlines' \
+            --exclude='badge-studio' \
             -e "ssh -i ~/.ssh/deploy_key" \
             ./ "$VPS_USER@$VPS_HOST:$DEPLOY_PATH/"

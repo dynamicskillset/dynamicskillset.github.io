@@ -1,1001 +1,1556 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport">
-    <title>Dynamic Skillset Ltd | Consultancy from Dr Doug Belshaw</title>
-    <meta name="description" content="Dr Doug Belshaw offers strategy, systems thinking, digital credentials, AI literacies, facilitation, and coaching for mission-driven organisations.">
-    <!-- Theme -->
-    <meta name="theme-color" content="#5e81ac">
-    <!-- Canonical -->
-    <link rel="canonical" href="https://dynamicskillset.com/">
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dynamicskillset.com/">
-    <meta property="og:title" content="Dynamic Skillset Ltd">
-    <meta property="og:description" content="Strategy, systems thinking, digital credentials, AI literacies, facilitation, and coaching from Dr Doug Belshaw.">
-    <meta property="og:image" content="https://dynamicskillset.com/og-image.png">
-    <meta property="og:locale" content="en_GB">
-    <!-- Twitter/X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dynamic Skillset Ltd">
-    <meta name="twitter:description" content="Strategy, systems thinking, digital credentials, AI literacies, facilitation, and coaching from Dr Doug Belshaw.">
-    <meta name="twitter:image" content="https://dynamicskillset.com/og-image.png">
-    <!-- Favicons -->
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="/favicon.ico" sizes="32x32">
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Dynamic Skillset Ltd",
-        "description": "Consultancy from Dr Doug Belshaw. Helping mission-driven organisations navigate complexity through strategy, systems thinking, digital credentials, AI literacies, and facilitation.",
-        "url": "https://dynamicskillset.com",
-        "founder": {
-          "@type": "Person",
-          "name": "Dr Doug Belshaw",
-          "jobTitle": "Consultant",
-          "url": "https://dougbelshaw.com"
-        },
-        "areaServed": "Worldwide",
-        "priceRange": "$$",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Consultancy Services",
-          "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Strategy & Systems Thinking"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital Credentials"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital & AI Literacies"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Facilitation & Coaching"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Speaking & Writing"}}
-          ]
-        }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dr Doug Belshaw | Dynamic Skillset Ltd</title>
+  <meta name="description" content="Dr Doug Belshaw is a consultant, facilitator, and critical friend helping mission-driven organisations make sense of their technology, build real capability, and make better decisions.">
+
+  <!-- Theme colour: light and dark -->
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#2e3440" media="(prefers-color-scheme: dark)">
+
+  <!-- Canonical and Open Graph -->
+  <link rel="canonical" href="https://dynamicskillset.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dynamicskillset.com/">
+  <meta property="og:title" content="Dr Doug Belshaw | Dynamic Skillset Ltd">
+  <meta property="og:description" content="Consultant, facilitator, and critical friend for mission-driven organisations.">
+  <meta property="og:image" content="https://dynamicskillset.com/og-image.png">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr Doug Belshaw | Dynamic Skillset Ltd">
+  <meta name="twitter:description" content="Consultant, facilitator, and critical friend for mission-driven organisations.">
+  <meta name="twitter:image" content="https://dynamicskillset.com/og-image.png">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Dynamic Skillset Ltd",
+    "description": "Consulting, facilitation, and strategic advice from Dr Doug Belshaw for mission-driven organisations.",
+    "url": "https://dynamicskillset.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Dr Doug Belshaw",
+      "jobTitle": "Consultant",
+      "url": "https://dougbelshaw.com"
+    },
+    "areaServed": "Worldwide",
+    "priceRange": "££"
+  }
+  </script>
+
+  <!-- Fonts: Lora (display) + DM Sans (body) via Bunny Fonts -->
+  <link rel="dns-prefetch" href="https://fonts.bunny.net">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Prevent flash of wrong theme: runs before paint -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('ds-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
       }
-    </script>
-    <style>
-      /* ── Nord palette ── */
-      :root {
-        --nord0: #2e3440;
-        --nord1: #3b4252;
-        --nord3: #4c566a;
-        --nord4: #d8dee9;
-        --nord5: #e5e9f0;
-        --nord6: #eceff4;
-        --nord7: #8fbcbb;
-        --nord8: #88c0d0;
-        --nord9: #81a1c1;
-        --nord10: #5e81ac;
-        --nord11: #bf616a;
-        --nord13: #ebcb8b;
-        --nord14: #a3be8c;
-        --nord15: #b48ead;
-      }
+    })();
+  </script>
 
-      /* ── Semantic variables ── */
-      :root {
-        --bg: var(--nord10);
-        --text: var(--nord6);
-        --text-secondary: var(--nord5);
-        --card-bg: rgba(236, 239, 244, 0.08);
-        --card-border: rgba(236, 239, 244, 0.15);
-        --card-hover-bg: rgba(236, 239, 244, 0.14);
-        --link-bg: var(--nord5);
-        --link-color: var(--nord10);
-        --link-hover-bg: var(--nord13);
-        --link-hover-color: var(--nord0);
-        --cta-bg: var(--nord13);
-        --cta-color: var(--nord0);
-        --focus-ring: var(--nord6);
-        --shadow: rgba(46, 52, 64, 0.15);
-        --shadow-lg: rgba(46, 52, 64, 0.3);
-      }
+  <style>
+    /* ── Nord palette ── */
+    :root {
+      --nord0:  #2e3440;
+      --nord1:  #3b4252;
+      --nord3:  #4c566a;
+      --nord4:  #d8dee9;
+      --nord5:  #e5e9f0;
+      --nord6:  #eceff4;
+      --nord8:  #88c0d0;
+      --nord9:  #81a1c1;
+      --nord10: #5e81ac;
+      --nord13: #ebcb8b;
+      --nord14: #a3be8c;
+    }
 
-      /* ── Box-sizing reset ── */
-      *, *::before, *::after {
-        box-sizing: border-box;
-      }
+    /* ── Light theme (default) ── */
+    :root {
+      --bg:             #f7f5f0;
+      --bg-alt:         #eeeae3;
+      --surface:        #ffffff;
+      --surface-hover:  #f5f1ea;
+      --border:         #ddd9d2;
+      --text:           var(--nord0);
+      --text-secondary: var(--nord3);
+      --text-muted:     #5d6b7c; /* darkened from #7a8799 — passes WCAG AA at ~5.2:1 on --bg */
+      --accent:         var(--nord10);
+      --accent-gold:    var(--nord13);
+      --accent-label:   #7a6120; /* darkened gold — passes WCAG AA at ~5.4:1 on --bg */
+      --link-color:     var(--nord10);
+      --link-bg:        var(--nord5);
+      --link-hover-bg:  var(--nord13);
+      --link-hover-fg:  var(--nord0);
+      --cta-bg:         var(--nord10);
+      --cta-color:      #ffffff;
+      --cta-hover:      color-mix(in srgb, var(--nord10) 80%, #000000);
+      --focus-ring:     var(--nord10);
+      --shadow-sm:      0 1px 4px rgba(46,52,64,.07);
+      --shadow-md:      0 4px 16px rgba(46,52,64,.10);
+      --shadow-lg:      0 8px 32px rgba(46,52,64,.14);
+      --radius:         12px;
+      --radius-sm:       8px;
+    }
 
-      /* ── Base ── */
-      html {
-        font: 1.25em/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
-        font-kerning: normal;
-        padding: 5% max(5%, env(safe-area-inset-right)) 2% max(5%, env(safe-area-inset-left));
-        background: var(--bg);
-        color: var(--text);
-        scroll-behavior: smooth;
-      }
+    /* ── Dark theme ── */
+    [data-theme="dark"] {
+      --bg:             var(--nord0);
+      --bg-alt:         var(--nord1);
+      --surface:        rgba(236,239,244,.06);
+      --surface-hover:  rgba(236,239,244,.10);
+      --border:         rgba(236,239,244,.13);
+      --text:           var(--nord6);
+      --text-secondary: var(--nord4);
+      --text-muted:     var(--nord9);
+      --accent:         var(--nord9);
+      --accent-gold:    var(--nord13);
+      --accent-label:   var(--nord13);
+      --link-color:     var(--nord13);
+      --link-bg:        rgba(235,203,139,.15);
+      --link-hover-bg:  var(--nord13);
+      --link-hover-fg:  var(--nord0);
+      --cta-bg:         var(--nord13);
+      --cta-color:      var(--nord0);
+      --cta-hover:      #d4a853;
+      --focus-ring:     var(--nord6);
+      --shadow-sm:      0 1px 4px rgba(0,0,0,.22);
+      --shadow-md:      0 4px 16px rgba(0,0,0,.28);
+      --shadow-lg:      0 8px 32px rgba(0,0,0,.40);
+    }
 
-      body {
-        max-width: 900px;
-        margin: 0 auto;
-        position: relative;
-        isolation: isolate;
-      }
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; }
 
-      /* ── Network SVG background ── */
-      .network-svg {
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        pointer-events: none;
-        z-index: -1;
-      }
+    /* ── Base ── */
+    html {
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.65;
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
 
-      /* SMIL handles animation; no CSS keyframes needed */
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-      /* ── Section h2 accent colour ── */
-      section h2 { border-bottom-color: var(--nord13); }
+    /* ── Typography ── */
+    h1, h2 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 400;
+      line-height: 1.15;
+      margin: 0 0 0.5em;
+    }
 
-      /* ── Typography hierarchy ── */
-      h1 {
-        font-size: 2em;
-        font-weight: 300;
-        line-height: 1.2;
-        letter-spacing: 0.01em;
-        margin-bottom: 0.3em;
-      }
+    h2 {
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      letter-spacing: -0.015em;
+    }
 
-      h2 {
-        font-size: 1.6em;
-        font-weight: 300;
-        letter-spacing: 0.02em;
-        border-bottom: 1px solid var(--card-border);
-        padding-bottom: 0.3em;
-        margin-bottom: 1em;
-      }
+    h3 {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.3;
+      margin: 0 0 0.4em;
+    }
 
-      h3 {
-        font-size: 1.15em;
-        font-weight: 600;
-        margin: 0 0 0.5em;
-      }
+    p { margin: 0 0 1em; }
+    p:last-child { margin-bottom: 0; }
 
-      p {
-        margin: 0 0 1em;
-      }
+    ul { margin: 0; padding: 0; }
 
-      /* ── Pill links ── */
-      a {
-        color: var(--link-color);
-        background: var(--link-bg);
-        text-decoration: none;
-        font-weight: 700;
-        border-radius: 5px;
-        padding: 0.15em 0.3em;
-        transition: background 0.2s cubic-bezier(0.25, 1, 0.5, 1), color 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-      }
+    /* ── Links ── */
+    a {
+      color: var(--link-color);
+      background: var(--link-bg);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 0.1em 0.3em;
+      transition: background .18s ease, color .18s ease;
+    }
 
-      a:hover {
-        background: var(--link-hover-bg);
-        color: var(--link-hover-color);
-      }
+    a:hover {
+      background: var(--link-hover-bg);
+      color: var(--link-hover-fg);
+    }
 
-      a:focus {
-        outline: 2px solid var(--focus-ring);
-        outline-offset: 2px;
-      }
+    a:focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
 
-      a:focus:not(:focus-visible) {
-        outline: none;
-      }
+    /* ── Skip link ── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      z-index: 200;
+      padding: 0.5em 1em;
+    }
+    .skip-link:focus { top: 1rem; }
 
-      a:focus-visible {
-        outline: 2px solid var(--focus-ring);
-        outline-offset: 2px;
-      }
+    /* ── Section label (eyebrow) ── */
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--accent-label);
+      margin-bottom: 0.75rem;
+    }
 
-      /* ── Expand all button ── */
-      .expand-controls {
-        display: flex;
-        justify-content: flex-end;
-        margin: 1.5rem 0 0.5rem;
-      }
+    .label::before {
+      content: "";
+      display: inline-block;
+      width: 1.5em;
+      height: 2px;
+      background: var(--accent-gold);
+      flex-shrink: 0;
+    }
 
-      .expand-btn {
-        background: none;
-        border: 1px solid var(--card-border);
-        color: var(--text-secondary);
-        font: inherit;
-        font-size: 0.9em;
-        padding: 0.5em 0.9em;
-        min-height: 44px;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-left: auto;
-        transition: color 0.2s, border-color 0.2s;
-      }
+    /* ── Nav ── */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
 
-      .expand-btn:hover {
-        color: var(--text);
-        border-color: var(--card-hover-bg);
-      }
+    .nav-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0.7rem 5%;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
 
-      .expand-btn:focus-visible {
-        outline: 2px solid var(--focus-ring);
-        outline-offset: 2px;
-      }
+    .nav-logo {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text);
+      background: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      white-space: nowrap;
+      margin-right: auto;
+      letter-spacing: -0.01em;
+    }
 
-      /* ── Collapsible sections ── */
-      section > details > summary {
-        font-size: 1.6em;
-        font-weight: 300;
-        letter-spacing: 0.02em;
-        color: var(--text);
-        border-bottom: 1px solid var(--nord13);
-        padding-bottom: 0.3em;
-        margin: 0 0 1em;
-        cursor: pointer;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-      }
+    .nav-logo:hover { background: none; color: var(--accent); }
 
-      section > details > summary::-webkit-details-marker,
-      section > details > summary::marker {
-        display: none;
-      }
+    .nav-logo svg {
+      width: 1.5em;
+      height: 1.5em;
+      flex-shrink: 0;
+    }
 
-      section > details > summary::after {
-        content: '+';
-        font-size: 0.7em;
-        font-weight: 300;
-        opacity: 0.45;
-        flex-shrink: 0;
-        margin-left: 0.5em;
-      }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 0.15rem;
+    }
 
-      section > details[open] > summary::after {
-        content: '−';
-      }
+    .nav-links a {
+      background: none;
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 0.875rem;
+      padding: 0.4em 0.65em;
+      border-radius: 6px;
+      white-space: nowrap;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
 
-      /* ── Card grid ── */
-      .card-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5em;
-      }
+    .nav-links a:hover {
+      background: var(--surface-hover);
+      color: var(--text);
+    }
 
-      /* ── Service icons ── */
-      .service-icon {
-        width: 1em;
-        height: 1em;
-        vertical-align: -0.1em;
-        margin-right: 0.3em;
-        flex-shrink: 0;
-      }
+    .nav-links a.nav-cta {
+      background: var(--cta-bg);
+      color: var(--cta-color);
+      font-weight: 700;
+    }
 
-      /* ── Tool logo ── */
-      .tool-logo {
-        width: 48px;
-        height: 48px;
-        margin-bottom: 1em;
-      }
+    .nav-links a.nav-cta:hover {
+      background: var(--cta-hover);
+      color: var(--cta-color);
+    }
 
-      .tool-logo img,
-      .tool-logo svg {
-        width: 100%;
-        height: 100%;
-      }
+    .theme-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      cursor: pointer;
+      border-radius: var(--radius-sm);
+      padding: 0.4em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      transition: border-color .18s, color .18s, background .18s;
+    }
 
-      /* ── Featured ebook card ── */
-      .card-featured {
-        grid-column: 1 / -1;
-        display: flex;
-        gap: 1.8em;
-        align-items: flex-start;
-      }
+    .theme-btn:hover {
+      border-color: var(--accent);
+      color: var(--text);
+      background: var(--surface-hover);
+    }
 
-      .card-featured-cover {
-        width: 150px;
-        flex-shrink: 0;
-        border-radius: 8px;
-        overflow: hidden;
-        clip-path: inset(0 round 8px);
-        box-shadow: 0 6px 20px var(--shadow-lg);
-      }
+    .theme-btn:focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
 
-      .card-featured-cover img {
-        display: block;
-        width: 100%;
-        border-radius: 8px;
-      }
+    .theme-btn .icon-sun  { display: none; }
+    .theme-btn .icon-moon { display: block; }
+    [data-theme="dark"] .theme-btn .icon-sun  { display: block; }
+    [data-theme="dark"] .theme-btn .icon-moon { display: none; }
 
-      .card-featured h3 {
-        margin-top: 0;
-      }
+    [data-theme="dark"] .nav-logo svg circle { fill: var(--nord9); }
 
-      @media (max-width: 600px) {
-        .card-featured {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .card-featured-cover {
-          width: 140px;
-        }
-      }
-
-      /* ── Cards ── */
-      .card {
-        background: var(--card-bg);
-        border: 1px solid var(--card-border);
-        border-radius: 12px;
-        padding: 1.5em;
-        transition: background 0.2s ease, transform 0.2s ease;
-      }
-
-      .card:hover {
-        background: var(--card-hover-bg);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px var(--shadow);
-      }
-
-      .card p {
-        font-size: 0.9em;
-        color: var(--text-secondary);
-        margin: 0;
-      }
-
-      .card .example {
-        font-size: 0.85em;
-        margin-top: 0.8em;
-        padding-top: 0.8em;
-        border-top: 1px solid var(--card-border);
-      }
-
-      /* ── Post links ── */
-      .post-list {
-        list-style: disc;
-        padding: 0 0 0 1.2em;
-        color: var(--text-secondary);
-        margin: 1em 0;
-      }
-
-      .post-list li {
-        border-bottom: 1px solid var(--card-border);
-      }
-
-      .post-list li:first-child {
-        border-top: 1px solid var(--card-border);
-      }
-
-      .post-list a {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1em;
-        background: none;
-        border-radius: 0;
-        padding: 0.7em 0.3em;
-        color: var(--text);
-        font-weight: 400;
-        font-size: 0.95em;
-        line-height: 1.4;
-        transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), color 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-      }
-
-      .post-list a::after {
-        content: "\2192";
-        color: var(--text-secondary);
-        opacity: 0;
-        transition: opacity 0.2s cubic-bezier(0.25, 1, 0.5, 1), transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-        transform: translateX(-0.3em);
-        flex-shrink: 0;
-      }
-
-      .post-list a:hover {
-        background: none;
-        color: var(--nord13);
-        transform: translateX(0.3em);
-      }
-
-      .post-list a:hover::after {
-        opacity: 1;
-        transform: translateX(0);
-      }
-
-      /* ── CTA button ── */
-      .cta {
-        display: inline-block;
-        background: var(--cta-bg);
-        color: var(--cta-color);
-        font-weight: 700;
-        padding: 0.5em 1.2em;
-        border-radius: 8px;
-        text-decoration: none;
-        transition: opacity 0.2s ease, transform 0.2s ease;
-      }
-
-      .cta:hover {
-        background: var(--cta-bg);
-        color: var(--cta-color);
-        opacity: 0.9;
-        transform: translateY(-1px);
-      }
-
-      /* ── Tagline ── */
-      .tagline {
-        color: var(--text);
-        font-size: 1.1em;
-        margin-top: -0.3em;
-        font-weight: 300;
-      }
-
-      /* ── Hero intro ── */
-      .hero-intro {
-        font-size: 1.1em;
-        max-width: 720px;
-      }
-
-      /* ── Logo ── */
-      .logo {
-        width: 1.2em;
-        height: 1.2em;
-        vertical-align: -0.15em;
-        margin-right: 0.2em;
-      }
-
-      /* ── Testimonial card ── */
-      .testimonial-card {
-        background: var(--card-bg);
-        border: 1px solid var(--card-border);
-        border-left: 3px solid var(--nord13);
-        border-radius: 0 12px 12px 0;
-        padding: 1.5em;
-        margin-bottom: 1.5em;
-      }
-
-      .testimonial-card p {
-        font-size: 0.95em;
-        line-height: 1.6;
-      }
-
-      .testimonial-card cite {
-        display: block;
-        font-style: italic;
-        font-size: 0.9em;
-        color: var(--text-secondary);
-        margin-top: 1em;
-      }
-
-      /* ── Details/summary ── */
-      summary {
-        cursor: pointer;
-        color: var(--text-secondary);
-        margin: 1.5em 0;
-        font-size: 0.95em;
-      }
-
-      summary:hover {
-        color: var(--text);
-      }
-
-      details[open] summary {
-        margin-bottom: 1em;
-      }
-
-      /* ── Contact list ── */
-      .contact-list {
-        list-style: none;
-        padding: 0;
-        display: flex;
+    @media (max-width: 600px) {
+      .nav-inner {
         flex-wrap: wrap;
-        gap: 1em;
+        row-gap: 0;
+        padding-bottom: 0;
       }
-
-      /* ── Footer ── */
-      footer {
-        padding: 2rem 0;
-        text-align: center;
-        font-size: 0.85em;
-        color: var(--text-secondary);
-        border-top: 1px solid var(--card-border);
+      .nav-links {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+        padding: 0.4rem 0 0.5rem;
+        border-top: 1px solid var(--border);
+        gap: 0.25rem;
       }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { white-space: nowrap; font-size: 0.8rem; }
+    }
 
-      /* ── Sections ── */
-      section {
-        padding: 1rem 0;
+    /* ── Page wrapper ── */
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 5%;
+      padding-left: max(5%, env(safe-area-inset-left));
+      padding-right: max(5%, env(safe-area-inset-right));
+    }
+
+    /* ── Section spacing ── */
+    .section {
+      padding: 4rem 0;
+    }
+
+    .section + .section {
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.75em 1.5em;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      background: none;
+      color: var(--text);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      background: var(--cta-bg);
+      color: var(--cta-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-primary:hover {
+      background: var(--cta-hover);
+      color: var(--cta-color);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-ghost {
+      background: var(--surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+    }
+
+    .btn-ghost:hover {
+      background: var(--surface-hover);
+      color: var(--text);
+    }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 4rem 0 3.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-photo {
+      order: 2;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      object-position: center 15%;
+      border-radius: 16px;
+      display: block;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero-text {
+      order: 1;
+    }
+
+    .hero-name {
+      font-size: clamp(2.75rem, 7vw, 5rem);
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      line-height: 1.0;
+      margin-bottom: 0.3em;
+      color: var(--text);
+    }
+
+    .hero-role {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin: 0 0 1.75rem;
+      letter-spacing: 0;
+    }
+
+    .hero-intro {
+      color: var(--text-secondary);
+      font-size: 1.25rem;
+      line-height: 1.65;
+      margin-bottom: 2rem;
+    }
+
+    .hero-intro strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    @media (max-width: 660px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-top: 2.5rem;
       }
-
-      /* ── Skip link ── */
-      .skip-link {
-        position: absolute;
-        top: -100%;
-        left: 0;
-        padding: 0.5em 1em;
-        z-index: 100;
+      .hero-photo { order: 1; }
+      .hero-text  { order: 2; }
+      .hero-photo img {
+        max-height: 340px;
+        object-position: center 10%;
       }
+    }
 
-      .skip-link:focus {
-        top: 0;
+    /* ── Situation ── */
+    .situation {
+      background: transparent;
+      border: none;
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 0;
+      padding: 0.25rem 0 0.25rem 2.25rem;
+    }
+
+    .situation h2 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.6em;
+    }
+
+    .situation-body {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      max-width: 680px;
+    }
+
+    .situation-body strong { color: var(--text); }
+
+    @media (max-width: 500px) {
+      .situation { padding: 0.25rem 0 0.25rem 1.5rem; }
+    }
+
+    /* ── Services ── */
+    .services-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top-width: 3px;
+      border-radius: var(--radius);
+      padding: 2rem 2.25rem;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow .2s ease, transform .2s ease;
+    }
+
+    .service-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .services-stack .service-card:nth-child(1) { border-top-color: var(--nord10); }
+    .services-stack .service-card:nth-child(2) { border-top-color: var(--nord14); }
+    .services-stack .service-card:nth-child(3) { border-top-color: var(--nord13); }
+
+    .service-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-stack .service-card:nth-child(1)::after { content: "01"; color: var(--nord10); }
+    .services-stack .service-card:nth-child(2)::after { content: "02"; color: var(--nord14); }
+    .services-stack .service-card:nth-child(3)::after { content: "03"; color: var(--nord13); }
+
+    .services-stack .service-card::after {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 600;
+      font-size: 7rem;
+      line-height: 1;
+      opacity: 0.07;
+      position: absolute;
+      top: 0.75rem;
+      right: 1.5rem;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .service-card h3 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 0.5em;
+    }
+
+    .service-body {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 1em;
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 1em 0;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.2em 0.65em;
+    }
+
+    .service-examples {
+      border-top: 1px solid var(--border);
+      margin-top: 1.25em;
+      padding-top: 1.25em;
+    }
+
+    .service-examples-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--text-muted);
+      margin-bottom: 0.6em;
+    }
+
+    .service-examples ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .service-examples li {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding: 0.2em 0 0.2em 1em;
+      position: relative;
+    }
+
+    .service-examples li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--accent-gold);
+    }
+
+    /* ── About ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: start;
+      margin-top: 2rem;
+    }
+
+    .about-text p {
+      color: var(--text-secondary);
+      margin-bottom: 1.1em;
+    }
+
+    .about-text p strong { color: var(--text); }
+
+    .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 1.1rem;
+      margin-bottom: 1.4rem;
+      align-items: flex-start;
+    }
+
+    .timeline-year {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 400;
+      font-size: 0.85rem;
+      color: var(--accent-label);
+      white-space: nowrap;
+      padding-top: 0.15em;
+      min-width: 4.5em;
+    }
+
+    .timeline-text {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    .timeline-text strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    @media (max-width: 660px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
       }
+    }
 
-      /* ── Responsive ── */
-      @media (max-width: 600px) {
-        html {
-          font-size: 1.1em;
+    /* ── Testimonials ── */
+    .testimonial-lead {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent-gold);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 2.5rem 2.75rem 2.5rem 2.75rem;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 1.25rem;
+      position: relative;
+    }
+
+    .testimonial-lead::before {
+      content: '\201D';
+      font-family: 'Lora', Georgia, serif;
+      font-size: 8rem;
+      line-height: 0.7;
+      color: var(--accent-gold);
+      opacity: 0.25;
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .testimonial-lead blockquote {
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .testimonial-lead p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 0.8em;
+    }
+
+    .testimonial-lead footer,
+    .testimonial-card footer {
+      display: block;
+      text-align: left;
+    }
+
+    .testimonial-lead footer {
+      margin-top: 1.4em;
+    }
+
+    .testimonial-lead cite {
+      display: block;
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .testimonial-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .testimonial-card blockquote {
+      margin: 0;
+      padding: 0;
+    }
+
+    .testimonial-card p {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 0.75em;
+    }
+
+    .testimonial-card footer { margin-top: 0.5em; }
+
+    .testimonial-card cite {
+      font-style: italic;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    [data-theme="dark"] .testimonial-card cite,
+    [data-theme="dark"] .testimonial-lead cite {
+      color: var(--accent-gold);
+    }
+
+    .testimonials-more {
+      margin-top: 1.5rem;
+    }
+
+    .testimonials-more > summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      list-style: none;
+      padding: 0.4em 0;
+      border-bottom: 1px solid var(--border);
+      width: 100%;
+    }
+
+    .testimonials-more > summary::-webkit-details-marker { display: none; }
+
+    .testimonials-more > summary::before {
+      content: '+';
+      display: inline-block;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1;
+      transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .testimonials-more[open] > summary::before {
+      content: '−';
+    }
+
+    .testimonials-more > summary:hover {
+      color: var(--accent-gold);
+      border-bottom-color: var(--accent-gold);
+    }
+
+    .testimonials-more .testimonials-grid {
+      margin-top: 1.25rem;
+    }
+
+    @media (max-width: 600px) {
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Resources ── */
+    .resources-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .resource-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem 1.5rem;
+      transition: box-shadow .18s, transform .18s;
+    }
+
+    .resource-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .resource-card h3 {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 0.5em;
+    }
+    .resource-card--full  { grid-column: 1 / -1; }
+    .resource-card--blue  { border-top: 3px solid var(--nord10); }
+    .resource-card--green { border-top: 3px solid var(--nord14); }
+    .card-more-link { margin-top: 1em; font-size: 0.875rem; }
+    .card-footer-link { margin-top: 1.25em; font-size: 0.9rem; }
+    .about-more { margin-top: 1.25em; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+    .resource-card p {
+      font-size: 0.925rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 0.75em;
+    }
+
+    .resource-link {
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .ebook-card {
+      grid-column: 1 / -1;
+      display: flex;
+      gap: 1.75rem;
+      align-items: flex-start;
+    }
+
+    .ebook-cover {
+      width: 110px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      clip-path: inset(0 round 6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .ebook-cover img {
+      display: block;
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .resources-grid { grid-template-columns: 1fr; }
+      .ebook-card { flex-direction: column; }
+      .ebook-cover { width: 90px; }
+    }
+
+    /* ── Writing list ── */
+    .writing-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.5em 0;
+    }
+
+    .writing-list li { border-bottom: 1px solid var(--border); }
+    .writing-list li:first-child { border-top: 1px solid var(--border); }
+
+    .writing-list a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      background: none;
+      color: var(--text);
+      font-weight: 400;
+      font-size: 0.875rem;
+      padding: 0.65em 0.2em;
+      border-radius: 0;
+      transition: color .18s;
+    }
+
+    .writing-list a::after {
+      content: "→";
+      color: var(--text-muted);
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: opacity .18s, transform .18s;
+      flex-shrink: 0;
+    }
+
+    .writing-list a:hover {
+      background: none;
+      color: var(--accent);
+    }
+
+    .writing-list a:hover::after {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ── Tools row ── */
+    .tools-section {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .tools-intro {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin: 0.5rem 0 1rem;
+    }
+
+    .tools-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .tool-pill {
+      display: inline-flex;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.45em 0.9em;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      min-height: 44px;
+      transition: border-color .18s, color .18s, box-shadow .18s;
+    }
+
+    .tool-pill:hover {
+      border-color: var(--accent);
+      color: var(--text);
+      background: var(--surface);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* ── Contact ── */
+    .contact-box {
+      background: var(--bg-alt);
+      border-radius: var(--radius);
+      padding: 3.5rem;
+      border-top: 4px solid var(--accent-gold);
+    }
+
+    .contact-box h2 {
+      margin-bottom: 0.4em;
+      font-size: clamp(2.25rem, 5vw, 3.5rem);
+    }
+
+    .contact-box > p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 580px;
+    }
+
+    @media (max-width: 500px) {
+      .contact-box { padding: 2.5rem 1.5rem; }
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.25rem;
+    }
+
+    .contact-links a {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-weight: 600;
+      padding: 0.45em 1em;
+      border-radius: var(--radius-sm);
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .contact-links a:hover {
+      background: var(--surface-hover);
+      color: var(--text);
+      border-color: var(--accent);
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    footer p { margin: 0.2em 0; }
+
+    /* ── Hero entrance ── */
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-text > * {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      .hero-photo {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      .hero-text > *.is-entered {
+        opacity: 1;
+        transform: none;
+        transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+                    transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .hero-photo.is-entered {
+        opacity: 1;
+        transform: none;
+        transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+    }
+
+    /* ── Scroll reveals ── */
+    @media (prefers-reduced-motion: no-preference) {
+      [data-reveal] {
+        opacity: 0;
+        transform: translateY(22px);
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      [data-reveal].is-visible {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* ── Hero photo parallax — scroll-driven (Chrome/Safari/Edge) ── */
+    @supports (animation-timeline: scroll()) {
+      @media (prefers-reduced-motion: no-preference) {
+        .hero-photo img {
+          animation: hero-parallax linear both;
+          animation-timeline: scroll(root block);
+          animation-range: 0px 700px;
         }
-
-        .card-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .contact-list {
-          flex-direction: column;
-        }
-
-        h1 {
-          font-size: 1.6em;
-        }
-
-        h2,
-        section > details > summary {
-          font-size: 1.3em;
+        @keyframes hero-parallax {
+          from { transform: translateY(0); }
+          to   { transform: translateY(50px); }
         }
       }
+    }
 
-      /* ── Reduced motion ── */
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
+    /* ── Reduced motion ── */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+      .btn:hover,
+      .service-card:hover,
+      .resource-card:hover { transform: none; }
+      .writing-list a::after,
+      .writing-list a:hover::after { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
 
-        .network-svg {
-          display: none;
-        }
+<a href="#main" class="skip-link">Skip to main content</a>
 
-        .card,
-        .cta,
-        a,
-        .post-list a {
-          transition: none;
-        }
+<!-- ── Navigation ── -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="19" fill="#5e81ac"/>
+        <path d="M22 8L12 22h7l-3 10 12-14h-8z" fill="#eceff4"/>
+      </svg>
+      Dynamic Skillset
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#work">Work with me</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="https://scheduler.dougbelshaw.com/s/82dc40ffd5b842db93e074" class="nav-cta">Book a call</a></li>
+    </ul>
+    <button class="theme-btn" id="theme-btn" aria-label="Toggle colour theme" aria-pressed="false">
+      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+    </button>
+  </div>
+</nav>
 
-        .card:hover,
-        .cta:hover {
-          transform: none;
-        }
+<div class="page">
+<main id="main">
 
-        .post-list a:hover {
-          transform: none;
-        }
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="hero-name">Dr Doug Belshaw</h1>
+      <p class="hero-role">Systems thinker &amp; occasional fox-hugger</p>
+      <div class="hero-intro">
+        <p>I work with mission-driven organisations who want to think more clearly, act more openly, and trust their own judgement.</p>
+      </div>
+      <div class="hero-actions">
+        <a href="https://scheduler.dougbelshaw.com/s/82dc40ffd5b842db93e074" class="btn btn-primary">Book a free 30-minute call</a>
+        <a href="#work" class="btn btn-ghost">See how I work</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img
+        src="doug-fuzzyfox.jpg"
+        alt="Doug Belshaw at MozFest Barcelona 2025, cheerfully hugging the Mozilla FuzzyFox mascot"
+        width="600"
+        height="700"
+        loading="eager"
+        decoding="async"
+      >
+    </div>
+  </section>
 
-        .post-list a::after,
-        .post-list a:hover::after {
-          opacity: 0;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!--
-      SMIL network: each <line> animates its own x1/y1 and x2/y2 independently,
-      so every endpoint tracks its node's path. Lines stay connected while nodes
-      drift freely at different speeds and phases.
+  <!-- ── The situation ── -->
+  <section class="section" aria-labelledby="situation-heading">
+    <div class="situation">
+      <span class="label">The situation</span>
+      <h2 id="situation-heading">It’s rarely the first time someone’s noticed.</h2>
+      <p class="situation-body">You’re doing important work. You’ve also, somewhere along the way, made technology decisions that felt reasonable at the time: a platform your funder preferred, a tool the last person recommended, a system nobody quite knows how to leave. It’s not that you don’t know something’s off. It’s that you haven’t had the outside perspective to see it properly, or the space to work out what to do about it. That’s where I come in.</p>
+    </div>
+  </section>
 
-      Node paths (dur / begin offset):
-        N1  180,130  20s  0s      N2  480,90   24s -8s
-        N3  780,140  18s -5s      N4 1120,80   22s -14s
-        N5 1360,220  26s -6s      N6  200,460  19s -11s
-        N7  550,400  23s -3s      N8  900,430  21s -16s
-        N9 1180,500  17s -9s      N10 400,700  25s -13s
-        N11 730,680  20s -7s      N12 1050,720 22s -4s
-        N13 1310,700 24s -10s
-    -->
-    <svg class="network-svg" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-      <g stroke="#d8dee9" stroke-width="1" opacity="0.25" fill="none">
+  <!-- ── Work with me ── -->
+  <section id="work" class="section" aria-labelledby="work-heading">
+    <span class="label">How I can help</span>
+    <h2 id="work-heading">Three areas of practice</h2>
 
-        <line x1="180" y1="130" x2="480" y2="90">
-          <animate attributeName="x1" values="180;222;158;198;180" dur="20s" repeatCount="indefinite" begin="0s"></animate>
-          <animate attributeName="y1" values="130;108;148;118;130" dur="20s" repeatCount="indefinite" begin="0s"></animate>
-          <animate attributeName="x2" values="480;514;454;492;480" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
-          <animate attributeName="y2" values="90;116;72;102;90" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
-        </line>
+    <div class="services-stack">
 
-        <line x1="480" y1="90" x2="780" y2="140">
-          <animate attributeName="x1" values="480;514;454;492;480" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
-          <animate attributeName="y1" values="90;116;72;102;90" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
-          <animate attributeName="x2" values="780;818;752;792;780" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
-          <animate attributeName="y2" values="140;118;162;132;140" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
-        </line>
+      <!-- Service 1: Systems thinking -->
+      <div class="service-card">
+        <h3>Systems thinking &amp; strategy</h3>
+        <p class="service-body">I help organisations step back from the operational noise and see the wider picture: where assumptions are baked in, what dependencies have built up, and where change is actually possible. This might be a Theory of Change process, cross-sector facilitation, or a structured programme helping you map and reduce your technology risks.</p>
+        <div class="service-examples">
+          <p class="service-examples-label">Recent examples</p>
+          <ul>
+            <li>Theory of Change with the Gates Foundation-funded SEBI-L team as part of their 10-year strategy</li>
+            <li><a href="https://techfreedom.org">TechFreedom</a>: structured programme for social-purpose organisations on technology dependencies and digital sovereignty (co-delivered with <a href="https://good-ship.co.uk">Tom Watson</a>)</li>
+            <li>Cross-sector facilitation using sociocratic processes for LocalGov Drupal</li>
+          </ul>
+        </div>
+      </div>
 
-        <line x1="780" y1="140" x2="1120" y2="80">
-          <animate attributeName="x1" values="780;818;752;792;780" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
-          <animate attributeName="y1" values="140;118;162;132;140" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
-          <animate attributeName="x2" values="1120;1152;1094;1132;1120" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
-          <animate attributeName="y2" values="80;106;62;92;80" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
-        </line>
+      <!-- Service 2: Digital & AI literacies -->
+      <div class="service-card">
+        <h3>Digital &amp; AI literacies</h3>
+        <p class="service-body">Organisations working in education, civil society, and public media are being asked to engage with AI without much support in thinking about it critically. I work with teams to develop frameworks, build genuine capacity, and create resources that go beyond the hype in either direction.</p>
+        <div class="service-examples">
+          <p class="service-examples-label">Recent examples</p>
+          <ul>
+            <li>AI Literacies framework for the BBC’s Responsible Innovation Centre for Public Media Futures, co-authored with Laura Hilliger</li>
+            <li>AI sustainability principles for Friends of the Earth</li>
+            <li>Speaking and writing on AI and digital literacies, including contributions to <a href="https://blog.dougbelshaw.com">Open Thinkering</a> and <a href="https://thoughtshrapnel.com">Thought Shrapnel</a></li>
+          </ul>
+        </div>
+      </div>
 
-        <line x1="1120" y1="80" x2="1360" y2="220">
-          <animate attributeName="x1" values="1120;1152;1094;1132;1120" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
-          <animate attributeName="y1" values="80;106;62;92;80" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
-          <animate attributeName="x2" values="1360;1388;1338;1372;1360" dur="26s" repeatCount="indefinite" begin="-6s"></animate>
-          <animate attributeName="y2" values="220;194;244;208;220" dur="26s" repeatCount="indefinite" begin="-6s"></animate>
-        </line>
+      <!-- Service 3: Digital credentials -->
+      <div class="service-card">
+        <h3>Digital credentials</h3>
+        <p class="service-body">I’ve been working with open standards, learning recognition, and institutional change since the early days of Open Badges. Whether you’re a national awarding body, a university, or an employer looking to make credentials genuinely portable and trustworthy, I can help you work out what’s possible and what to do next.</p>
+        <div class="service-examples">
+          <p class="service-examples-label">Recent examples</p>
+          <ul>
+            <li>Digital credentials strategy with <a href="https://www.skillsdevelopmentscotland.co.uk">Skills Development Scotland</a> and the Awards Network, working towards a national system of Verifiable Credentials</li>
+            <li><a href="https://www.ndln.ie/new-learning-and-teaching-models">Report</a> for the Irish Technological University sector on the future of digital and micro-credentials</li>
+            <li>Longstanding involvement with the <a href="https://digitalcredentials.mit.edu">Digital Credentials Consortium</a> (DCC)</li>
+          </ul>
+        </div>
+      </div>
 
-        <line x1="180" y1="130" x2="200" y2="460">
-          <animate attributeName="x1" values="180;222;158;198;180" dur="20s" repeatCount="indefinite" begin="0s"></animate>
-          <animate attributeName="y1" values="130;108;148;118;130" dur="20s" repeatCount="indefinite" begin="0s"></animate>
-          <animate attributeName="x2" values="200;238;172;214;200" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
-          <animate attributeName="y2" values="460;432;482;448;460" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
-        </line>
+    </div>
+  </section>
 
-        <line x1="480" y1="90" x2="550" y2="400">
-          <animate attributeName="x1" values="480;514;454;492;480" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
-          <animate attributeName="y1" values="90;116;72;102;90" dur="24s" repeatCount="indefinite" begin="-8s"></animate>
-          <animate attributeName="x2" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-          <animate attributeName="y2" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-        </line>
+  <!-- ── About ── -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <span class="label">About</span>
+    <h2 id="about-heading">Values-led, curious, and first to the work that matters</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p><strong>I’ve consistently been the person to help build the conceptual infrastructure before everyone else catches up.</strong> Open Badges in 2011, before employers cared about alternative credentials. Digital and web literacy (anti-)frameworks before digital skills and AI literacy became policy priorities. Federated social networks before digital sovereignty was a board-level question.</p>
+        <p>I’m proud of this track record. I’m not a late adopter just implementing someone else’s framework because I <em>built</em> the frameworks and have stayed close enough to the technical reality to know when theory and practice diverge.</p>
+        <p>I’ve operated across three areas that rarely overlap: practitioner (classroom teacher, Director of E-Learning), researcher (Ed.D., Jisc, PGCert in Systems Thinking in Practice), and movement-builder (Mozilla, Open Badges community, co-operative working). Most people in this field are strong in one or two — very rarely in all three.</p>
+        <p>My intellectual outputs tend to last. The <a href="https://dougbelshaw.com/thesis">Essential Elements of Digital Literacies</a> framework is still being cited and adopted fourteen years after the thesis. I've been writing my blog for over 20 years. MoodleNet forked into <a href="https://bonfirenetworks.org">Bonfire</a> and is still live. I build things that stay built.</p>
+        <p class="about-more">
+          <a href="https://dougbelshaw.com" class="btn btn-ghost">More about Doug</a>
+          <a href="https://dougbelshaw.com/speaking/" class="btn btn-ghost">Talks &amp; appearances</a>
+        </p>
+      </div>
+      <div>
+        <ul class="timeline" aria-label="Career timeline">
+          <li class="timeline-item">
+            <span class="timeline-year">2004–10</span>
+            <span class="timeline-text"><strong>Secondary school teacher</strong> then Director of E-Learning at Northumberland Church of England Academy, a nine-site institution of 3,500 people, with a seat on the Senior Leadership Team.</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-year">2010–12</span>
+            <span class="timeline-text"><strong>Jisc infoNet</strong>, based at Northumbria University, supporting national programmes in FE and HE. Completed an Ed.D. with a thesis on digital literacies.</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-year">2012–15</span>
+            <span class="timeline-text"><strong>Mozilla Foundation</strong>: Badges &amp; Skills Lead, then Web Literacy Lead. 50+ conferences. A standard adopted by IBM and others. 100+ stakeholders worldwide.</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-year">2014–now</span>
+            <span class="timeline-text"><strong>Dynamic Skillset Ltd</strong>: independent consultancy. Ten years of client work across education, civil society, and international NGOs.</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-year">2018–20</span>
+            <span class="timeline-text"><strong>Moodle HQ</strong>: Product Manager, conceiving and delivering MoodleNet, the world’s first decentralised digital commons for educators.</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-year">2023–24</span>
+            <span class="timeline-text"><strong>PGCert Systems Thinking in Practice</strong> (Open University), building frameworks and tools for making sense of a volatile, uncertain world — and bringing that into every client engagement.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        <line x1="780" y1="140" x2="900" y2="430">
-          <animate attributeName="x1" values="780;818;752;792;780" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
-          <animate attributeName="y1" values="140;118;162;132;140" dur="18s" repeatCount="indefinite" begin="-5s"></animate>
-          <animate attributeName="x2" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-          <animate attributeName="y2" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-        </line>
+  <!-- ── Testimonials ── -->
+  <section id="testimonials" class="section" aria-labelledby="testimonials-heading">
+    <span class="label">Testimonials</span>
+    <h2 id="testimonials-heading">What people say</h2>
 
-        <line x1="1120" y1="80" x2="1180" y2="500">
-          <animate attributeName="x1" values="1120;1152;1094;1132;1120" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
-          <animate attributeName="y1" values="80;106;62;92;80" dur="22s" repeatCount="indefinite" begin="-14s"></animate>
-          <animate attributeName="x2" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-          <animate attributeName="y2" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-        </line>
-
-        <line x1="1360" y1="220" x2="1180" y2="500">
-          <animate attributeName="x1" values="1360;1388;1338;1372;1360" dur="26s" repeatCount="indefinite" begin="-6s"></animate>
-          <animate attributeName="y1" values="220;194;244;208;220" dur="26s" repeatCount="indefinite" begin="-6s"></animate>
-          <animate attributeName="x2" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-          <animate attributeName="y2" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-        </line>
-
-        <line x1="200" y1="460" x2="550" y2="400">
-          <animate attributeName="x1" values="200;238;172;214;200" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
-          <animate attributeName="y1" values="460;432;482;448;460" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
-          <animate attributeName="x2" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-          <animate attributeName="y2" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-        </line>
-
-        <line x1="550" y1="400" x2="900" y2="430">
-          <animate attributeName="x1" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-          <animate attributeName="y1" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-          <animate attributeName="x2" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-          <animate attributeName="y2" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-        </line>
-
-        <line x1="900" y1="430" x2="1180" y2="500">
-          <animate attributeName="x1" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-          <animate attributeName="y1" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-          <animate attributeName="x2" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-          <animate attributeName="y2" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-        </line>
-
-        <line x1="200" y1="460" x2="400" y2="700">
-          <animate attributeName="x1" values="200;238;172;214;200" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
-          <animate attributeName="y1" values="460;432;482;448;460" dur="19s" repeatCount="indefinite" begin="-11s"></animate>
-          <animate attributeName="x2" values="400;434;372;412;400" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
-          <animate attributeName="y2" values="700;672;724;688;700" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
-        </line>
-
-        <line x1="550" y1="400" x2="400" y2="700">
-          <animate attributeName="x1" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-          <animate attributeName="y1" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-          <animate attributeName="x2" values="400;434;372;412;400" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
-          <animate attributeName="y2" values="700;672;724;688;700" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
-        </line>
-
-        <line x1="550" y1="400" x2="730" y2="680">
-          <animate attributeName="x1" values="550;582;522;562;550" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-          <animate attributeName="y1" values="400;374;424;388;400" dur="23s" repeatCount="indefinite" begin="-3s"></animate>
-          <animate attributeName="x2" values="730;762;702;742;730" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
-          <animate attributeName="y2" values="680;652;704;668;680" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
-        </line>
-
-        <line x1="900" y1="430" x2="730" y2="680">
-          <animate attributeName="x1" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-          <animate attributeName="y1" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-          <animate attributeName="x2" values="730;762;702;742;730" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
-          <animate attributeName="y2" values="680;652;704;668;680" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
-        </line>
-
-        <line x1="900" y1="430" x2="1050" y2="720">
-          <animate attributeName="x1" values="900;932;872;912;900" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-          <animate attributeName="y1" values="430;408;452;418;430" dur="21s" repeatCount="indefinite" begin="-16s"></animate>
-          <animate attributeName="x2" values="1050;1082;1022;1062;1050" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
-          <animate attributeName="y2" values="720;692;744;708;720" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
-        </line>
-
-        <line x1="1180" y1="500" x2="1050" y2="720">
-          <animate attributeName="x1" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-          <animate attributeName="y1" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-          <animate attributeName="x2" values="1050;1082;1022;1062;1050" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
-          <animate attributeName="y2" values="720;692;744;708;720" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
-        </line>
-
-        <line x1="400" y1="700" x2="730" y2="680">
-          <animate attributeName="x1" values="400;434;372;412;400" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
-          <animate attributeName="y1" values="700;672;724;688;700" dur="25s" repeatCount="indefinite" begin="-13s"></animate>
-          <animate attributeName="x2" values="730;762;702;742;730" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
-          <animate attributeName="y2" values="680;652;704;668;680" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
-        </line>
-
-        <line x1="730" y1="680" x2="1050" y2="720">
-          <animate attributeName="x1" values="730;762;702;742;730" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
-          <animate attributeName="y1" values="680;652;704;668;680" dur="20s" repeatCount="indefinite" begin="-7s"></animate>
-          <animate attributeName="x2" values="1050;1082;1022;1062;1050" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
-          <animate attributeName="y2" values="720;692;744;708;720" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
-        </line>
-
-        <line x1="1180" y1="500" x2="1310" y2="700">
-          <animate attributeName="x1" values="1180;1212;1152;1192;1180" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-          <animate attributeName="y1" values="500;472;524;488;500" dur="17s" repeatCount="indefinite" begin="-9s"></animate>
-          <animate attributeName="x2" values="1310;1344;1282;1322;1310" dur="24s" repeatCount="indefinite" begin="-10s"></animate>
-          <animate attributeName="y2" values="700;674;724;690;700" dur="24s" repeatCount="indefinite" begin="-10s"></animate>
-        </line>
-
-        <line x1="1050" y1="720" x2="1310" y2="700">
-          <animate attributeName="x1" values="1050;1082;1022;1062;1050" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
-          <animate attributeName="y1" values="720;692;744;708;720" dur="22s" repeatCount="indefinite" begin="-4s"></animate>
-          <animate attributeName="x2" values="1310;1344;1282;1322;1310" dur="24s" repeatCount="indefinite" begin="-10s"></animate>
-          <animate attributeName="y2" values="700;674;724;690;700" dur="24s" repeatCount="indefinite" begin="-10s"></animate>
-        </line>
-
-      </g>
-    </svg>
-    <a href="#services" class="skip-link">Skip to content</a>
-
-    <header>
-      <h1>
-        <svg class="logo" viewBox="0 0 40 40" aria-hidden="true">
-          <circle cx="20" cy="20" r="19" fill="#eceff4"></circle>
-          <path d="M22 8L12 22h7l-3 10 12-14h-8z" fill="#5e81ac"></path>
-        </svg> Dynamic Skillset Ltd
-      </h1>
-      <p class="tagline">Consultancy from <a href="https://dougbelshaw.com">Dr Doug Belshaw</a></p>
-      <p class="hero-intro">Helping mission-driven organisations navigate complexity and work more openly. I'm a consultant, facilitator, and critical friend.</p>
-      <p><strong>Stuck?</strong> The chances are I can point you in the right direction.</p>
-      <p><a class="cta" href="#contact">Let's talk</a></p>
-    </header>
-
-    <div class="expand-controls">
-      <button class="expand-btn" id="expand-all" aria-expanded="false">Expand all sections</button>
+    <div class="testimonial-lead">
+      <blockquote>
+        <p>Doug and I go way back to the early days of Open Badges. His 15+ years in this space means he brings not just expertise, but institutional memory and perspective that’s invaluable as the digital credentials field evolves.</p>
+        <p>I appreciate that Doug operates at multiple levels simultaneously. He understands technology deeply, and he’s equally comfortable navigating community dynamics and organisational change. Whether he’s presenting, writing reports on micro-credentials, or facilitating strategic planning sessions, he stays grounded in human-centred approaches and open practices.</p>
+        <p>Doug combines deep technical knowledge, facilitation skills, community-building expertise, and collaborative instinct. I’m grateful for everything he’s contributed to the DCC and to digital credentials more broadly.</p>
+        <footer><cite>Kerri Lemoie, PhD — Director, Digital Credentials Consortium</cite></footer>
+      </blockquote>
     </div>
 
-    <main>
-      <section id="services">
-        <details open>
-        <summary role="heading" aria-level="2">What I do</summary>
-        <div class="card-grid">
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="3" r="2" fill="#ebcb8b"/><circle cx="2.5" cy="16" r="2" fill="#ebcb8b"/><circle cx="17.5" cy="16" r="2" fill="#ebcb8b"/><line x1="10" y1="5" x2="2.5" y2="14" stroke="#ebcb8b" stroke-width="1.3" opacity="0.7"/><line x1="10" y1="5" x2="17.5" y2="14" stroke="#ebcb8b" stroke-width="1.3" opacity="0.7"/><line x1="4.5" y1="16" x2="15.5" y2="16" stroke="#ebcb8b" stroke-width="1.3" opacity="0.7"/></svg>Strategy &amp; Systems Thinking</h3>
-            <p>Helping organisations see the bigger picture through theory of change work, identifying leverage points, and navigating boundaries between systems.</p>
-            <p class="example"><b>Example:</b> Guiding the Gates Foundation-funded SEBI-L team through a Theory of Change as part of their 10-year strategy</p>
-          </div>
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.5 L17 5.75 L17 14.25 L10 18.5 L3 14.25 L3 5.75 Z" fill="none" stroke="#ebcb8b" stroke-width="1.5"/><circle cx="10" cy="10" r="2.5" fill="#ebcb8b"/></svg>Digital Credentials</h3>
-            <p>Guiding the design and adoption of verifiable credentials, digital badges, and micro-credentials — from policy through to implementation.</p>
-            <p class="example"><b>Example:</b> Supporting Skills Development Scotland and the Awards Network towards a national system of Verifiable Credentials</p>
-          </div>
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.5 L11.8 8.2 L18.5 10 L11.8 11.8 L10 18.5 L8.2 11.8 L1.5 10 L8.2 8.2 Z" fill="#ebcb8b"/></svg>Digital &amp; AI Literacies</h3>
-            <p>Creating frameworks and guidance for responsible AI adoption and digital literacy across organisations and sectors.</p>
-            <p class="example"><b>Example:</b> Developing an AI Literacies framework for the Responsible Innovation Centre for Public Media Futures based at the BBC</p>
-          </div>
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="6" r="3" fill="#ebcb8b"/><path d="M1 18 C1 13 4 11.5 7 11.5 C10 11.5 13 13 13 18" fill="none" stroke="#ebcb8b" stroke-width="1.5" stroke-linecap="round"/><circle cx="14.5" cy="6" r="2.2" fill="#ebcb8b" opacity="0.55"/><path d="M10.5 18 C11 15 12.5 13.5 14.5 13.5 C16.5 13.5 18 15 18.5 18" fill="none" stroke="#ebcb8b" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/></svg>Facilitation &amp; Coaching</h3>
-            <p>Running away days, aligning stakeholders, mentoring individuals, and facilitating group decision-making using sociocratic processes.</p>
-            <p class="example"><b>Example:</b> Facilitating a multi-stakeholder away day for LocalGov Drupal to establish consent on future collaboration</p>
-          </div>
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="7" y="1" width="6" height="9" rx="3" fill="none" stroke="#ebcb8b" stroke-width="1.5"/><path d="M4 10 Q4 16.5 10 16.5 Q16 16.5 16 10" fill="none" stroke="#ebcb8b" stroke-width="1.5" stroke-linecap="round"/><line x1="10" y1="16.5" x2="10" y2="19" stroke="#ebcb8b" stroke-width="1.5" stroke-linecap="round"/><line x1="7" y1="19" x2="13" y2="19" stroke="#ebcb8b" stroke-width="1.5" stroke-linecap="round"/></svg>Speaking &amp; Writing</h3>
-            <p>Conference keynotes, podcast appearances, and authored reports. Regular contributor to conversations about education, technology, and open practices.</p>
-            <p class="example"><b>Example:</b> See my <a href="https://dougbelshaw.com/speaking">Speaking</a> page for recordings. For example my appearance on Helen Beetham's <a href="https://helenbeetham.substack.com/p/doug-belshaw-on-digital-and-ai-literacies">imperfect offerings</a> podcast</p>
-          </div>
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="5" fill="none" stroke="#ebcb8b" stroke-width="1.5"/><line x1="12" y1="12" x2="18" y2="18" stroke="#ebcb8b" stroke-width="2" stroke-linecap="round"/></svg>Critical Friend</h3>
-            <p>An honest, constructive sounding board for leaders and organisations. I ask the questions others won't, challenge assumptions, and help you see blind spots — while remaining firmly on your side.</p>
-            <p class="example"><b>Example:</b> Serving as critical friend to the Director of London CLC, providing independent perspective on strategy and programmes</p>
-          </div>
-        </div>
-        </details>
-      </section>
-
-      <section id="resources">
-        <details>
-        <summary role="heading" aria-level="2">Resources</summary>
-        <div class="card-grid">
-          <div class="card card-featured">
-            <div class="card-featured-cover">
-              <img src="https://blog.dougbelshaw.com/content/images/size/w1000/2026/02/cover-page.png" alt="How to Be Less Wrong in a Polycrisis — ebook cover" loading="lazy" decoding="async" width="150">
-            </div>
-            <div>
-              <h3>New ebook: How to Be Less Wrong in a Polycrisis</h3>
-              <p>A practical guide to decision-making in uncertain times. Drawing on systems thinking and mental models, it helps leaders and organisations avoid common thinking traps — and make better calls when the stakes are high.</p>
-              <p class="example"><a href="https://blog.dougbelshaw.com/polycrisis-ebook/">Read the announcement</a> · <a href="https://dajbelshaw.gumroad.com/l/polycrisis?layout=profile">Get the ebook</a></p>
-            </div>
-          </div>
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="2" width="10" height="14" rx="1" fill="none" stroke="#ebcb8b" stroke-width="1.5"/><line x1="6" y1="6" x2="10" y2="6" stroke="#ebcb8b" stroke-width="1.2" stroke-linecap="round"/><line x1="6" y1="9" x2="10" y2="9" stroke="#ebcb8b" stroke-width="1.2" stroke-linecap="round"/><line x1="6" y1="12" x2="8" y2="12" stroke="#ebcb8b" stroke-width="1.2" stroke-linecap="round"/><path d="M10 2 L13 5 L13 16 L10 16" fill="none" stroke="#ebcb8b" stroke-width="1.2" stroke-linejoin="round" opacity="0.6"/></svg>AI Literacies for Young People</h3>
-            <p>Co-authored report with Laura Hilliger for the BBC's Responsible Innovation Centre, examining AI literacy for 14–19-year-olds. Based on analysis of 40 frameworks and 35 expert interviews, it sets out a framework for public service media organisations to support young people's critical engagement with AI.</p>
-            <p class="example"><a href="https://downloads.bbc.co.uk/rd/responsible-innovation/responsible-innovation-centre-ai-literacies-young-adults.pdf">Read the report</a></p>
-          </div>
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="7.5" r="4.5" fill="none" stroke="#ebcb8b" stroke-width="1.5"/><path d="M7 11.5 L5.5 18 L10 15.5 L14.5 18 L13 11.5" fill="none" stroke="#ebcb8b" stroke-width="1.5" stroke-linejoin="round"/></svg>Digital Credentials</h3>
-            <p>Report for the Irish Technological University sector examining how micro and digital credentials can reshape learning frameworks. Covers definitions, Open Badges v3 technical standards, and European and global examples — helping institutions align digital credentialing with broader goals and student experience.</p>
-            <p class="example"><a href="https://www.ndln.ie/new-learning-and-teaching-models">Read the report</a></p>
-          </div>
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4 17 C4 8 13 3 17 3 C17 10 11 17 4 17Z" fill="none" stroke="#ebcb8b" stroke-width="1.5" stroke-linejoin="round"/><line x1="4" y1="17" x2="11.5" y2="9" stroke="#ebcb8b" stroke-width="1.2" stroke-linecap="round"/></svg>Harnessing AI for Environmental Justice</h3>
-            <p>Co-authored report for Friends of the Earth examining how AI can be used to advance environmental goals — and the risks it poses. Sets out principles for responsible AI adoption in civil society organisations, with a focus on energy use, data governance, and community impact.</p>
-            <p class="example"><a href="https://policy.friendsoftheearth.uk/reports/harnessing-ai-environmental-justice">Read the report</a></p>
-          </div>
-          <div class="card">
-            <h3><svg class="service-icon" viewBox="0 0 20 20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 2.5 L17.5 6.5 L7 17 L3 17 L3 13 Z" fill="none" stroke="#ebcb8b" stroke-width="1.5" stroke-linejoin="round"/><line x1="11" y1="5" x2="15" y2="9" stroke="#ebcb8b" stroke-width="1.2"/></svg>Recent writing</h3>
-            <ul class="post-list">
-              <li><a href="https://blog.dougbelshaw.com/polygonal-badges/">Badges that change shape to show skills development</a></li>
-              <li><a href="https://blog.dougbelshaw.com/ai-legibility-significance/">When AI remembers everything and organisations forget how to choose</a></li>
-              <li><a href="https://blog.dougbelshaw.com/techfreedom-launch/">TechFreedom and the risks hiding in your tech stack</a></li>
-            </ul>
-            <p class="example"><a href="https://blog.dougbelshaw.com">More on my blog</a></p>
-          </div>
-        </div>
-        </details>
-      </section>
-
-      <section id="tools">
-        <details>
-        <summary role="heading" aria-level="2">Tools</summary>
-        <p>I've built these tools to improve my own practice as a freelance consultant. They're all open source, so you're welcome to use them too.</p>
-        <div class="card-grid">
-          <div class="card" style="grid-column: 1 / -1; display: flex; gap: 1.8em; align-items: center;">
-            <div class="tool-logo" style="width: 72px; height: 72px; flex-shrink: 0; margin-bottom: 0;">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60">
-                <!-- Eye -->
-                <path d="M5 30 C13 19, 25 19, 28 30 C25 41, 13 41, 5 30Z" fill="none" stroke="#D8DEE9" stroke-width="2.5"/>
-                <circle cx="17" cy="30" r="7" fill="#3B4252" stroke="#5E81AC" stroke-width="2"/>
-                <circle cx="17" cy="30" r="2.5" fill="#D8DEE9"/>
-                <!-- Three sightlines -->
-                <line x1="28" y1="30" x2="91" y2="11" stroke="#A3BE8C" stroke-width="3" stroke-linecap="round"/>
-                <line x1="28" y1="30" x2="95" y2="30" stroke="#88C0D0" stroke-width="3" stroke-linecap="round"/>
-                <line x1="28" y1="30" x2="91" y2="49" stroke="#EBCB8B" stroke-width="3" stroke-linecap="round"/>
-                <!-- End dots -->
-                <circle cx="91" cy="11" r="3.5" fill="#A3BE8C"/>
-                <circle cx="95" cy="30" r="3.5" fill="#88C0D0"/>
-                <circle cx="91" cy="49" r="3.5" fill="#EBCB8B"/>
-              </svg>
-            </div>
-            <div>
-              <h3 style="margin-top: 0;">Sightlines</h3>
-              <p>A suite of three tools for thinking more clearly about your organisation's technology: what you have, what it costs, and what it means for your independence.</p>
-              <p class="example"><a href="https://dynamicskillset.com/sightlines">Open Sightlines</a></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="tool-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                <rect width="32" height="32" rx="6" fill="#3B4252"/>
-                <rect y="0" width="32" height="10" rx="6" fill="#5E81AC"/>
-                <rect y="6" width="32" height="4" fill="#5E81AC"/>
-                <circle cx="9" cy="17" r="3" fill="#A3BE8C"/>
-                <circle cx="23" cy="17" r="3" fill="#EBCB8B"/>
-                <circle cx="9" cy="25" r="3" fill="#D8DEE9"/>
-                <circle cx="23" cy="25" r="3" fill="#88C0D0"/>
-              </svg>
-            </div>
-            <h3>CalAnywhere</h3>
-            <p>Privacy-first scheduling. Share your availability without handing over your calendar data to a third party.</p>
-            <p class="example"><a href="https://dynamicskillset.github.io/CalAnywhere/">Open CalAnywhere</a></p>
-          </div>
-          <div class="card">
-            <div class="tool-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18">
-                <rect x="0" y="12" width="6" height="6" rx="1.5" fill="#ebcb8b"/>
-                <rect x="8" y="6" width="6" height="12" rx="1.5" fill="#ebcb8b"/>
-                <rect x="16" y="0" width="6" height="18" rx="1.5" fill="#ebcb8b"/>
-              </svg>
-            </div>
-            <h3>Groundwork</h3>
-            <p>A dashboard for freelancers. Track clients, projects, and income in one place — no subscription required.</p>
-            <p class="example"><a href="https://dynamicskillset.github.io/groundwork">Open Groundwork</a></p>
-          </div>
-          <div class="card">
-            <div class="tool-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="35" fill="none" stroke="#4C566A" stroke-width="9"/>
-                <path d="M 46.9 15.1 A 35 35 0 0 1 84.9 46.9" fill="none" stroke="#5E81AC" stroke-width="9" stroke-linecap="butt"/>
-                <path d="M 84.9 53.1 A 35 35 0 0 1 53.1 84.9" fill="none" stroke="#88C0D0" stroke-width="9" stroke-linecap="butt"/>
-                <path d="M 46.9 84.9 A 35 35 0 0 1 15 50" fill="none" stroke="#A3BE8C" stroke-width="9" stroke-linecap="butt"/>
-              </svg>
-            </div>
-            <h3>TaskDial</h3>
-            <p>Plan your day visually. A simple, distraction-free tool for deciding what to focus on and when.</p>
-            <p class="example"><a href="https://dynamicskillset.github.io/TaskDial">Open TaskDial</a></p>
-          </div>
-          <div class="card">
-            <div class="tool-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                <!-- Hexagonal badge (Open Badges style) -->
-                <polygon points="16,2 28,9 28,23 16,30 4,23 4,9" fill="#3B4252"/>
-                <polygon points="16,5 25.4,10.5 25.4,21.5 16,27 6.6,21.5 6.6,10.5" fill="none" stroke="#5E81AC" stroke-width="1.5"/>
-                <!-- Star -->
-                <polygon points="16,9.5 17.8,14.5 23,14.5 18.8,17.5 20.4,22.5 16,19.5 11.6,22.5 13.2,17.5 9,14.5 14.2,14.5" fill="#EBCB8B"/>
-              </svg>
-            </div>
-            <h3>Badge Studio</h3>
-            <p>Create Open Badges in your browser. Customise colours and settings, then export as PNG or SVG — no design software needed.</p>
-            <p class="example"><a href="https://dynamicskillset.com/badge-studio/">Open Badge Studio</a></p>
-          </div>
-        </div>
-        </details>
-      </section>
-
-      <section id="testimonials">
-        <details>
-        <summary role="heading" aria-level="2">Testimonials</summary>
+    <details class="testimonials-more">
+      <summary>More testimonials</summary>
+      <div class="testimonials-grid">
         <div class="testimonial-card">
-          <p>Doug and I go way back to the early days of Open Badges. His 15+ years in this space means he brings not just expertise, but institutional memory and perspective that's invaluable as the digital credentials field evolves.</p>
-          <p>I appreciate that Doug operates at multiple levels simultaneously. He understands technology deeply, and he's equally comfortable navigating community dynamics and organizational change. Whether he's presenting, writing reports on micro-credentials, or facilitating strategic planning sessions, he stays grounded in human-centered approaches and open practices.</p>
-          <p>Doug combines deep technical knowledge, facilitation skills, community-building expertise, and collaborative instinct. I'm grateful for everything he's contributed to the DCC and to digital credentials more broadly.</p>
-          <cite>— Kerri Lemoie, PhD (Director, Digital Credentials Consortium)</cite>
+          <blockquote>
+            <p>Doug brings exceptional clarity of thought, deep expertise in digital literacies, and a collaborative spirit that elevates every session he’s part of. He’s equally at ease shaping big-picture strategy as he is engaging participants in practical, hands-on learning. Any team would benefit from Doug’s insight, integrity, and sheer commitment to meaningful professional development.</p>
+            <footer><cite>Ken McCarthy — Head of Centre for Academic Practice, South East Technological University</cite></footer>
+          </blockquote>
         </div>
-        <details>
-          <summary>More testimonials</summary>
-          <div class="testimonial-card">
-            <p>I've had the pleasure of working with Doug Belshaw across several badging workshops as part of the N-TUTORR programme. Doug brings exceptional clarity of thought, deep expertise in digital literacies, and a collaborative spirit that elevates every session he's part of. He's equally at ease shaping big-picture strategy as he is engaging participants in practical, hands-on learning. Any team would benefit from Doug's insight, integrity, and sheer commitment to meaningful professional development.</p>
-            <cite>— Ken McCarthy (Head of Centre for Academic Practice at South East Technological University)</cite>
-          </div>
-          <div class="testimonial-card">
-            <p>I had the pleasure of working with Doug on an away day bringing together multiple stakeholders with potentially different interests with a view to establishing consent on how to work together in the future. His work on pre-planning was timely and efficient, yet effective. I know from past experience that the day itself could have been a huge challenge but went really smoothly, mostly down to the sociocratic processes put in place by Doug and his colleague Aaron. This is testament to the energy, enthusiasm and preparation that went into it.</p>
-            <cite>— Nathan Brown (Director at Co-op Culture)</cite>
-          </div>
-          <div class="testimonial-card">
-            <p>Always really switched on. A sane voice around all things educational technology and standards and much more — always look forward to working in Doug related space.</p>
-            <cite>— Joe Wilson (Quality Assurance Specialist TQER)</cite>
-          </div>
-          <div class="testimonial-card">
-            <p>I took some mentoring sessions with Doug. I wasn't expecting much because I thought I knew my service pretty well. I was wrong, Doug unearthed a lot for me to think about. I'll be back for more.</p>
-            <cite>— Mark Conroy (Drupal consultant)</cite>
-          </div>
-        </details>
-        </details>
-      </section>
+        <div class="testimonial-card">
+          <blockquote>
+            <p>His work on pre-planning was timely and efficient, yet effective. I know from past experience that the day itself could have been a huge challenge but went really smoothly, mostly down to the sociocratic processes put in place by Doug. This is testament to the energy, enthusiasm and preparation that went into it.</p>
+            <footer><cite>Nathan Brown — Director, Co-op Culture</cite></footer>
+          </blockquote>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            <p>Always really switched on. A sane voice around all things educational technology and standards and much more — always look forward to working in Doug-related space.</p>
+            <footer><cite>Joe Wilson — Quality Assurance Specialist, TQER</cite></footer>
+          </blockquote>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            <p>I took some mentoring sessions with Doug. I wasn’t expecting much because I thought I knew my service pretty well. I was wrong — Doug unearthed a lot for me to think about. I’ll be back for more.</p>
+            <footer><cite>Mark Conroy — Drupal consultant</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </details>
+  </section>
 
-      <section id="contact">
-        <details open>
-        <summary role="heading" aria-level="2">Get in touch</summary>
-        <p>Every situation is slightly different, so let's start with a 30-minute (free) chat. I'm based in the UK and usually work remotely, but can travel nationally and internationally. Engagements range from single sessions to ongoing partnerships.</p>
-        <ul class="contact-list">
-          <li><a href="mailto:%68ell%6F%40dy%6Ea%6D%69cskillset%2Ec%6F%6D">Email</a></li>
-          <li><a href="https://www.linkedin.com/in/dajbelshaw">LinkedIn</a></li>
-          <li><a href="https://signal.me/#eu/irSoRXEn7M4IsmSksKJ4y4uiG-Sw8k3ywM3qSggm9IAWf162_cdCwbc0IDNKai_C">Signal</a></li>
+  <!-- ── Resources ── -->
+  <section id="resources" class="section" aria-labelledby="resources-heading">
+    <span class="label">Resources</span>
+    <h2 id="resources-heading">Things I’ve made</h2>
+
+    <div class="resources-grid">
+
+      <div class="resource-card ebook-card">
+        <div class="ebook-cover">
+          <img src="polycrisis-cover.png" alt="How to Be Less Wrong in a Polycrisis — ebook cover" loading="lazy" width="110" height="155">
+        </div>
+        <div>
+          <h3>How to Be Less Wrong in a Polycrisis</h3>
+          <p>Most decision-making advice assumes a clarity that real situations rarely have. This ebook is for when things are tangled: practical tools for acting wisely when the right answer isn't obvious.</p>
+          <a href="https://dajbelshaw.gumroad.com/l/polycrisis?layout=profile" class="resource-link">Get the ebook</a>
+          &nbsp;·&nbsp;
+          <a href="https://blog.dougbelshaw.com/polycrisis-ebook/" class="resource-link">Read the announcement</a>
+        </div>
+      </div>
+
+      <div class="resource-card resource-card--green">
+        <h3>AI Literacies for Young People</h3>
+        <p>Co-authored with Laura Hilliger for the BBC’s Responsible Innovation Centre. Based on 40 frameworks and 35 expert interviews, a framework for supporting young people’s critical engagement with AI.</p>
+        <a href="https://downloads.bbc.co.uk/rd/responsible-innovation/responsible-innovation-centre-ai-literacies-young-adults.pdf" class="resource-link">Read the report</a>
+      </div>
+
+      <div class="resource-card resource-card--blue">
+        <h3>Digital Credentials for the Irish TU sector</h3>
+        <p>Report for the Irish Technological University sector examining how Open Badges v3 and the Europass framework can give learners portable, stackable credentials — with European comparisons and practical steps for institutions ready to move.</p>
+        <a href="https://www.ndln.ie/new-learning-and-teaching-models" class="resource-link">Read the report</a>
+      </div>
+
+      <div class="resource-card resource-card--full">
+        <h3>Harnessing AI for Environmental Justice</h3>
+        <p>Co-authored report for Friends of the Earth examining how AI can advance environmental goals, and the risks it poses. Sets out principles for responsible AI adoption in civil society.</p>
+        <a href="https://policy.friendsoftheearth.uk/reports/harnessing-ai-environmental-justice" class="resource-link">Read the report</a>
+      </div>
+
+      <div class="resource-card resource-card--full">
+        <h3>Recent writing</h3>
+        <ul class="writing-list">
+          <li><a href="https://blog.dougbelshaw.com/polygonal-badges/">Badges that change shape to show skills development</a></li>
+          <li><a href="https://blog.dougbelshaw.com/ai-legibility-significance/">When AI remembers everything and organisations forget how to choose</a></li>
+          <li><a href="https://blog.dougbelshaw.com/techfreedom-launch/">TechFreedom and the risks hiding in your tech stack</a></li>
         </ul>
-        </details>
-      </section>
-    </main>
+        <p class="card-more-link"><a href="https://blog.dougbelshaw.com">More at Open Thinkering</a> &nbsp;·&nbsp; <a href="https://dougbelshaw.com/speaking/">Talks &amp; appearances</a></p>
+      </div>
 
-    <footer>
-      <p>Dynamic Skillset Ltd · 20 Wenlock Road, London, England, N1 7GU</p>
-      <p>Company number: 09365574 · VAT number: 230070858</p>
-    </footer>
+    </div>
 
-    <script>
-      const btn = document.getElementById('expand-all');
-      const sectionDetails = Array.from(document.querySelectorAll('section > details'));
+    <div class="tools-section">
+      <span class="label">Open-source tools</span>
+      <p class="tools-intro">I build tools to improve my own consulting practice. They’re all free and open-source; use them if they’re useful.</p>
+      <div class="tools-row">
+        <a href="https://dynamicskillset.com/sightlines" class="tool-pill">Sightlines: think through complex situations</a>
+        <a href="https://dynamicskillset.com/contours" class="tool-pill">Contours: map your thinking</a>
+        <a href="https://dynamicskillset.github.io/CalAnywhere/" class="tool-pill">CalAnywhere: privacy-first scheduling</a>
+        <a href="https://dynamicskillset.github.io/groundwork" class="tool-pill">Groundwork: freelance dashboard</a>
+        <a href="https://dynamicskillset.github.io/TaskDial" class="tool-pill">TaskDial: visual day planning</a>
+        <a href="https://dynamicskillset.com/badge-studio/" class="tool-pill">Badge Studio: create Open Badges</a>
+      </div>
+    </div>
+  </section>
 
-      function syncBtn() {
-        const allOpen = sectionDetails.every(d => d.open);
-        btn.textContent = allOpen ? 'Collapse all sections' : 'Expand all sections';
-        btn.setAttribute('aria-expanded', allOpen ? 'true' : 'false');
-      }
+  <!-- ── Get in touch ── -->
+  <section id="contact" class="section" aria-labelledby="contact-heading">
+    <div class="contact-box">
+      <span class="label">Get in touch</span>
+      <h2 id="contact-heading">Let’s talk</h2>
+      <p><strong>Stuck? The chances are I can point you in the right direction.</strong> I’m based in the UK and usually work remotely, though I travel for the right engagement. Retainers, single days, and multi-session programmes all welcome.</p>
+      <a href="https://scheduler.dougbelshaw.com/s/82dc40ffd5b842db93e074" class="btn btn-primary">Check my availability</a>
+      <div class="contact-links">
+        <a href="mailto:%68ell%6F%40dy%6Ea%6D%69cskillset%2Ec%6F%6D">Email</a>
+        <a href="https://www.linkedin.com/in/dajbelshaw">LinkedIn</a>
+        <a href="https://signal.me/#eu/irSoRXEn7M4IsmSksKJ4y4uiG-Sw8k3ywM3qSggm9IAWf162_cdCwbc0IDNKai_C">Signal</a>
+      </div>
+    </div>
+  </section>
 
-      btn.addEventListener('click', () => {
-        const allOpen = sectionDetails.every(d => d.open);
-        sectionDetails.forEach(d => { d.open = !allOpen; });
-        syncBtn();
+</main>
+</div>
+
+<footer>
+  <div class="page">
+    <p>Dynamic Skillset Ltd · 20 Wenlock Road, London, England, N1 7GU</p>
+    <p>Company number: 09365574 · VAT number: 230070858</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+
+  // ── Theme toggle ──────────────────────────────────────────
+  var themeBtn = document.getElementById('theme-btn');
+  var html = document.documentElement;
+  themeBtn.addEventListener('click', function () {
+    var isDark = html.getAttribute('data-theme') === 'dark';
+    html.setAttribute('data-theme', isDark ? '' : 'dark');
+    localStorage.setItem('ds-theme', isDark ? 'light' : 'dark');
+    themeBtn.setAttribute('aria-pressed', isDark ? 'false' : 'true');
+  });
+  // Sync aria-pressed on load
+  if (html.getAttribute('data-theme') === 'dark') {
+    themeBtn.setAttribute('aria-pressed', 'true');
+  }
+
+  // ── Bail early if user prefers reduced motion ─────────────
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  // ── Hero entrance ─────────────────────────────────────────
+  // Elements enter in sequence, photo slightly offset
+  var heroSequence = [
+    { selector: '.hero-name',    delay: 60  },
+    { selector: '.hero-role',    delay: 160 },
+    { selector: '.hero-intro',   delay: 280 },
+    { selector: '.hero-actions', delay: 420 },
+    { selector: '.hero-photo',   delay: 100 },
+  ];
+
+  // Small rAF to ensure CSS is applied before JS runs entrance
+  requestAnimationFrame(function () {
+    setTimeout(function () {
+      heroSequence.forEach(function (item) {
+        var el = document.querySelector(item.selector);
+        if (!el) return;
+        setTimeout(function () { el.classList.add('is-entered'); }, item.delay);
       });
+    }, 60);
+  });
 
-      sectionDetails.forEach(d => d.addEventListener('toggle', syncBtn));
-      syncBtn();
+  // ── Scroll reveals ────────────────────────────────────────
+  // Assign [data-reveal] automatically so HTML stays clean
+  function revealEl(el, extraDelay) {
+    // Skip elements already in viewport — avoids flicker where element briefly disappears
+    var rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) return;
+    el.setAttribute('data-reveal', '');
+    if (extraDelay) el.setAttribute('data-reveal-delay', String(extraDelay));
+  }
 
-    </script>
-</body></html>
+  // Section labels + headings
+  document.querySelectorAll('.section .label').forEach(function (el) { revealEl(el, 0); });
+  document.querySelectorAll('.section h2').forEach(function (el) { revealEl(el, 90); });
+
+  // Situation box
+  document.querySelectorAll('.situation').forEach(function (el) { revealEl(el, 0); });
+
+  // Service cards — stagger by 130ms each
+  document.querySelectorAll('.service-card').forEach(function (el, i) {
+    revealEl(el, i * 130);
+  });
+
+  // About text block
+  document.querySelectorAll('.about-text').forEach(function (el) { revealEl(el, 0); });
+
+  // Timeline items — natural stagger as user scrolls
+  document.querySelectorAll('.timeline-item').forEach(function (el) { revealEl(el, 0); });
+
+  // Testimonial featured + cards
+  document.querySelectorAll('.testimonial-lead').forEach(function (el) { revealEl(el, 0); });
+  document.querySelectorAll('.testimonial-card').forEach(function (el, i) {
+    revealEl(el, i * 90);
+  });
+
+  // Resource cards
+  document.querySelectorAll('.resource-card').forEach(function (el, i) {
+    revealEl(el, i * 80);
+  });
+
+  // Tools section + contact
+  document.querySelectorAll('.tools-section').forEach(function (el) { revealEl(el, 0); });
+  document.querySelectorAll('.contact-box').forEach(function (el) { revealEl(el, 0); });
+
+  // IntersectionObserver: trigger reveals when elements enter viewport
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      var delay = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+      setTimeout(function () { el.classList.add('is-visible'); }, delay);
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+
+  document.querySelectorAll('[data-reveal]').forEach(function (el) {
+    observer.observe(el);
+  });
+
+  // ── Hero photo parallax — JS fallback for Firefox ─────────
+  // Only runs if CSS scroll-driven animations aren't supported
+  if (!CSS.supports('animation-timeline', 'scroll()')) {
+    var heroImg = document.querySelector('.hero-photo img');
+    if (heroImg) {
+      var ticking = false;
+      window.addEventListener('scroll', function () {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(function () {
+          var progress = Math.min(window.scrollY / 700, 1);
+          heroImg.style.transform = 'translateY(' + (progress * 50) + 'px)';
+          ticking = false;
+        });
+      }, { passive: true });
+    }
+  }
+
+})();
+</script>
+
+</body>
+</html>

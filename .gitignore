@@ -1,0 +1,16 @@
+.DS_Store
+.playwright-mcp/
+New website/
+
+# Development screenshots
+*.png
+!polycrisis-cover.png
+!og-image.png
+!apple-touch-icon.png
+!logo.png
+
+# Markdown (except standard docs)
+*.md
+!README.md
+!CHANGELOG.md
+!LICENSE.md

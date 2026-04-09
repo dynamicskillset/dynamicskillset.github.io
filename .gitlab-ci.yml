@@ -1,0 +1,13 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp index.html 404.html public/
+    - cp doug-fuzzyfox.jpg polycrisis-cover.png og-image.png public/
+    - cp favicon.ico favicon.svg favicon-inverse.svg apple-touch-icon.png public/
+    - cp logo.png logo.svg public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

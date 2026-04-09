@@ -1,2 +1,3 @@
-# dynamicskillset.github.io
-New Dynamic Skillset website
+# Dynamic Skillset website
+
+Moved to: https://framagit.org/dynamicskillset/dynamicskillset-site/
